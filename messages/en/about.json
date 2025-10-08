@@ -1,58 +1,28 @@
-﻿{{
-
-  "title": "About Us",  "title": "About Us",
-
-  "subtitle": "With over 15 years of experience, we produce quality jelly candies and spread happiness worldwide.",  "subtitle": "With over 15 years of experience, we produce quality jelly candies and spread happiness around the world.",
-
-  "storyTitle": "Our Story",  "storyTitle": "Our Story",
-
-  "valuesTitle": "Our Values",  "valuesTitle": "Our Values",
-
-  "timelineTitle": "Our Journey",  "timelineTitle": "Our Journey",
-
-  "certificatesTitle": "Quality Certificates",  "certificatesTitle": "Quality Certificates",
-
-  "company": "Neviza Food Industry",  "company": "Neviza Food Industry",
-
-  "story": {  "story": {
-
-    "paragraph1": "As Neviza, we have been operating as one of Turkey's leading jelly candy manufacturers since 2010. By combining modern technology with traditional flavors, we produce high-quality and delicious products.",    "paragraph1": "As Neviza, we have been operating as one of Turkey's leading companies in jelly candy production since 2010. By blending modern technology with traditional taste, we produce high-quality and delicious products.",
-
-    "paragraph2": "In our production facility equipped with state-of-the-art machinery and our expert team, we have a daily production capacity of 10 tons. Our products are distributed throughout Turkey and exported to more than 20 countries worldwide."    "paragraph2": "Our hygiene and quality standards are in line with international norms, and we continuously conduct research and development activities in our production processes. This allows us to offer innovative products that appeal to both children and adults.",
-
-  },    "paragraph3": "We also have a presence in international markets by exporting to more than 4 countries worldwide. With our customer satisfaction-oriented approach, we have made the Neviza brand a representative of reliable and quality products."
-
-  "values": [  },
-
-    {  "values": {
-
-      "title": "Quality",    "quality": {
-
-      "description": "We ensure the highest quality standards in every product."      "title": "Quality",
-
-    },      "description": "We provide the highest quality assurance by manufacturing to ISO 22000 standards."
-
-    {    },
-
-      "title": "Innovation",    "customerSatisfaction": {
-
-      "description": "We develop new flavors and products for continuous improvement."      "title": "Customer Satisfaction",
-
-    },      "description": "We continuously improve ourselves to exceed our customers' expectations."
-
-    {    },
-
-      "title": "Customer Satisfaction",    "innovation": {
-
-      "description": "Our customers' happiness is our priority."      "title": "Innovation",
-
-    }      "description": "We offer innovative products through continuous research and development."
-
-  ]    },
-
-}    "reliability": {
-      "title": "Reliability",
-      "description": "With 15 years of experience, we have become a trusted brand in the industry."
+﻿{
+  "title": "About Us",
+  "subtitle": "With over 15 years of experience, we produce quality jelly candies and spread happiness worldwide.",
+  "storyTitle": "Our Story",
+  "valuesTitle": "Our Values",
+  "timelineTitle": "Our Journey",
+  "certificatesTitle": "Quality Certificates",
+  "company": "Neviza Food Industry",
+  "story": {
+    "paragraph1": "As Neviza, we have been operating as one of Turkey's leading jelly candy manufacturers since 2010. By combining modern technology with traditional flavors, we produce high-quality and delicious products.",
+    "paragraph2": "Our hygiene and quality standards are in line with international norms, and we continuously conduct research and development activities in our production processes. This allows us to offer innovative products that appeal to both children and adults.",
+    "paragraph3": "We also have a presence in international markets by exporting to more than 4 countries worldwide. With our customer satisfaction-oriented approach, we have made the Neviza brand a representative of reliable and quality products."
+  },
+  "values": [
+    {
+      "title": "Quality",
+      "description": "We provide the highest quality assurance by manufacturing to ISO 22000 standards."
+    },
+    {
+      "title": "Innovation",
+      "description": "We develop new flavors and products for continuous improvement."
+    },
+    {
+      "title": "Customer Satisfaction",
+      "description": "We always prioritize customer satisfaction in all our processes."
     }
-  }
+  ]
 }
