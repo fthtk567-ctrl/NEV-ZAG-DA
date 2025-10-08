@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Bizimle İletişime Geçin",
+    "description": "Sorularınız, önerileriniz veya işbirliği talepleriniz için bizimle iletişime geçmekten çekinmeyin. Size en kısa sürede dönüş yapacağız."
+  },
+  "infoSection": {
+    "title": "İletişim Bilgilerimiz"
+  },
+  "info": {
+    "phone": {
+      "title": "Telefon",
+      "content": "+90 507 651 42 00\n+90 232 876 54 32"
+    },
+    "email": {
+      "title": "E-posta",
+      "content": "info@nevizagida.com\nnevizagida@gmail.com"
+    },
+    "address": {
+      "title": "Adres",
+      "content": "Atatürk Organize Sanayi Bölgesi\n10042 Sokak No: 8\nÇiğli / İzmir / Türkiye"
+    },
+    "hours": {
+      "title": "Çalışma Saatleri",
+      "content": "Pazartesi - Cuma: 08:30 - 17:30\nCumartesi - Pazar: Kapalı"
+    }
+  },
+  "form": {
+    "title": "Bize Mesaj Gönderin",
+    "description": "Formu doldurarak bize mesajınızı iletebilirsiniz. En kısa sürede size geri dönüş yapacağız.",
+    "name": {
+      "label": "Adınız",
+      "placeholder": "Adınızı girin"
+    },
+    "email": {
+      "label": "E-posta Adresiniz",
+      "placeholder": "E-posta adresinizi girin"
+    },
+    "phone": {
+      "label": "Telefon Numaranız",
+      "placeholder": "Telefon numaranızı girin"
+    },
+    "company": {
+      "label": "Şirket Adı",
+      "placeholder": "Şirket adını girin (opsiyonel)"
+    },
+    "subject": {
+      "label": "Konu"
+    },
+    "message": {
+      "label": "Mesajınız",
+      "placeholder": "Mesajınızı buraya yazın..."
+    },
+    "subjectOptions": {
+      "general": "Genel Bilgi",
+      "sales": "Satış ve Siparişler",
+      "partnership": "İş Ortaklığı",
+      "support": "Destek ve Yardım"
+    },
+    "submit": "Mesaj Gönder"
+  },
+  "map": {
+    "title": "Bizi Ziyaret Edin",
+    "description": "İzmir'deki tesislerimize kolayca ulaşabilirsiniz.",
+    "comingSoon": "Harita yakında burada olacak"
+  },
+  "quickContact": {
+    "title": "Hızlı İletişim",
+    "description": "Acil bir sorunuz mu var? Hemen bizi arayın veya e-posta gönderin.",
+    "call": "Bizi Arayın",
+    "email": "E-posta Gönderin"
+  }
+}

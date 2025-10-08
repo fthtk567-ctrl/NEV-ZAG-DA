@@ -1,31 +1,17 @@
-﻿'use client';
-
-import { useTranslations } from 'next-intl';
+﻿import { setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, MessageSquare, Send } from 'lucide-react';
-import { useState } from 'react';
+import ContactForm from './ContactForm';
 
 interface ContactPageProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
-export default function ContactPage({ params }: ContactPageProps) {
-  const { locale } = params;
-  const t = useTranslations('contact');
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    subject: t('form.subjectOptions.general'),
-    message: ''
-  });
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+export default async function ContactPage({ params }: ContactPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('contact');
 
   const contactInfo = [
     {
@@ -97,117 +83,44 @@ export default function ContactPage({ params }: ContactPageProps) {
 
           {/* Contact Form */}
           <div>
-            <Card className="shadow-xl">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-headline text-gray-900 flex items-center justify-center gap-2">
-                  <MessageSquare className="w-6 h-6 text-primary-600" />
-                  {t('form.title')}
-                </CardTitle>
-                <p className="text-gray-600 mt-2">
-                  {t('form.description')}
-                </p>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        {t('form.name.label')}
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                        placeholder={t('form.name.placeholder')}
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        {t('form.email.label')}
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                        placeholder={t('form.email.placeholder')}
-                        required
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        {t('form.phone.label')}
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                        placeholder={t('form.phone.placeholder')}
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        {t('form.company.label')}
-                      </label>
-                      <input
-                        type="text"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                        placeholder={t('form.company.placeholder')}
-                      />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      {t('form.subject.label')}
-                    </label>
-                    <select 
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                    >
-                      <option>{t('form.subjectOptions.general')}</option>
-                      <option>{t('form.subjectOptions.sales')}</option>
-                      <option>{t('form.subjectOptions.partnership')}</option>
-                      <option>{t('form.subjectOptions.support')}</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      {t('form.message.label')}
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-vertical"
-                      placeholder={t('form.message.placeholder')}
-                      required
-                    ></textarea>
-                  </div>
-
-                  <Button type="submit" className="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2">
-                    <Send className="w-5 h-5" />
-                    {t('form.submit')}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <ContactForm
+              translations={{
+                form: {
+                  title: t('form.title'),
+                  description: t('form.description'),
+                  name: {
+                    label: t('form.name.label'),
+                    placeholder: t('form.name.placeholder')
+                  },
+                  email: {
+                    label: t('form.email.label'),
+                    placeholder: t('form.email.placeholder')
+                  },
+                  phone: {
+                    label: t('form.phone.label'),
+                    placeholder: t('form.phone.placeholder')
+                  },
+                  company: {
+                    label: t('form.company.label'),
+                    placeholder: t('form.company.placeholder')
+                  },
+                  subject: {
+                    label: t('form.subject.label')
+                  },
+                  message: {
+                    label: t('form.message.label'),
+                    placeholder: t('form.message.placeholder')
+                  },
+                  submit: t('form.submit'),
+                  subjectOptions: {
+                    general: t('form.subjectOptions.general'),
+                    sales: t('form.subjectOptions.sales'),
+                    partnership: t('form.subjectOptions.partnership'),
+                    support: t('form.subjectOptions.support')
+                  }
+                }
+              }}
+            />
           </div>
         </div>
 

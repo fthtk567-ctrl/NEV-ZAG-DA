@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "description": "Feel free to contact us with any questions, suggestions, or partnership requests. We will get back to you as soon as possible."
+  },
+  "infoSection": {
+    "title": "Contact Information"
+  },
+  "info": {
+    "phone": {
+      "title": "Phone",
+      "content": "+90 507 651 42 00\n+90 232 876 54 32"
+    },
+    "email": {
+      "title": "Email",
+      "content": "info@nevizagida.com\nnevizagida@gmail.com"
+    },
+    "address": {
+      "title": "Address",
+      "content": "Atatürk Organized Industrial Zone\n10042 Street No: 8\nÇiğli / İzmir / Turkey"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "content": "Monday - Friday: 08:30 - 17:30\nSaturday - Sunday: Closed"
+    }
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "description": "Fill out the form to send us your message. We will get back to you as soon as possible.",
+    "name": {
+      "label": "Your Name",
+      "placeholder": "Enter your name"
+    },
+    "email": {
+      "label": "Your Email",
+      "placeholder": "Enter your email address"
+    },
+    "phone": {
+      "label": "Your Phone Number",
+      "placeholder": "Enter your phone number"
+    },
+    "company": {
+      "label": "Company Name",
+      "placeholder": "Enter company name (optional)"
+    },
+    "subject": {
+      "label": "Subject"
+    },
+    "message": {
+      "label": "Your Message",
+      "placeholder": "Write your message here..."
+    },
+    "subjectOptions": {
+      "general": "General Information",
+      "sales": "Sales and Orders",
+      "partnership": "Partnership",
+      "support": "Support and Help"
+    },
+    "submit": "Send Message"
+  },
+  "map": {
+    "title": "Visit Us",
+    "description": "You can easily reach our facilities in İzmir.",
+    "comingSoon": "Map will be here soon"
+  },
+  "quickContact": {
+    "title": "Quick Contact",
+    "description": "Have an urgent question? Call us or send an email right away.",
+    "call": "Call Us",
+    "email": "Send Email"
+  }
+}
