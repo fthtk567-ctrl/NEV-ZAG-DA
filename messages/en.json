@@ -1,30 +1,56 @@
-{
-  "navigation": {
-    "home": "Home",
-    "about": "About Us",
-    "products": "Products",
-    "quality": "Quality",
-    "contact": "Contact"
-  },
-  "hero": {
-    "title": "The Sweetest Form of Happiness",
-    "description": "We have been delighting children and adults with our delicious jelly candies produced since 2010.",
-    "buttonText": "Discover Our Products"
-  },
-  "home": {
-    "statsSection": {
-      "title": "Neviza in Numbers"
-    },
-    "stats": {
-      "experience": "Years of Experience",
-      "experienceDesc": "In the industry since 2010",
-      "customers": "Happy Customers",
-      "customersDesc": "Throughout Turkey",
-      "capacity": "Production Capacity",
-      "capacityDesc": "Tons/Month",
-      "certificates": "Quality Certificates",
-      "certificatesDesc": "National and international"
-    },
+﻿{{
+
+  "navigation": {  "navigation": {
+
+    "home": "Home",    "home": "Home",
+
+    "about": "About",    "about": "About Us",
+
+    "products": "Products",    "products": "Products",
+
+    "quality": "Quality",    "quality": "Quality",
+
+    "contact": "Contact"    "contact": "Contact"
+
+  },  },
+
+  "hero": {  "hero": {
+
+    "title": "The Sweetest Form of Happiness",    "title": "The Sweetest Form of Happiness",
+
+    "description": "Since 2010, we've been bringing joy to children and adults with our delicious jelly candies.",    "description": "We have been delighting children and adults with our delicious jelly candies produced since 2010.",
+
+    "buttonText": "Discover Our Products"    "buttonText": "Discover Our Products"
+
+  },  },
+
+  "home": {  "home": {
+
+    "statsSection": {    "statsSection": {
+
+      "title": "Neviza in Numbers"      "title": "Neviza in Numbers"
+
+    },    },
+
+    "stats": {    "stats": {
+
+      "experience": "Years Experience",      "experience": "Years of Experience",
+
+      "experienceDesc": "In the industry since 2010",      "experienceDesc": "In the industry since 2010",
+
+      "products": "Products",      "customers": "Happy Customers",
+
+      "productsDesc": "variety of candies",      "customersDesc": "Throughout Turkey",
+
+      "countries": "Countries",      "capacity": "Production Capacity",
+
+      "countriesDesc": "we export to"      "capacityDesc": "Tons/Month",
+
+    }      "certificates": "Quality Certificates",
+
+  }      "certificatesDesc": "National and international"
+
+}    },
     "productSection": {
       "title": "Our Product Categories"
     },
@@ -78,7 +104,7 @@
   },
   "footer": {
     "company": "Neviza Food Industry",
-    "address": "Çumra Organized Industrial Zone, Çumra/Konya - Turkey",
+    "address": "Ã‡umra Organized Industrial Zone, Ã‡umra/Konya - Turkey",
     "email": "nevizagida@gmail.com",
     "phone": "+90 507 651 42 00",
     "rights": "All rights reserved.",
@@ -103,7 +129,7 @@
       },
       "address": {
         "title": "Address",
-        "content": "Çumra Organized Industrial Zone\nÇumra/Konya"
+        "content": "Ã‡umra Organized Industrial Zone\nÃ‡umra/Konya"
       },
       "hours": {
         "title": "Working Hours",
@@ -146,7 +172,7 @@
     },
     "map": {
       "title": "Our Location",
-      "description": "You can visit our modern facility in Çumra Organized Industrial Zone.",
+      "description": "You can visit our modern facility in Ã‡umra Organized Industrial Zone.",
       "comingSoon": "Map Coming Soon"
     },
     "quickContact": {

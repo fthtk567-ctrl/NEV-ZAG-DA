@@ -1,4 +1,4 @@
-// This root layout should not be used for rendering
+﻿// This root layout should not be used for rendering
 // All routes should go through [locale] layout
 export default function RootLayout({
   children,

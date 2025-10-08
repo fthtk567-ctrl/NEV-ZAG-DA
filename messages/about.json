@@ -1,32 +1,32 @@
-{
-  "title": "Hakkımızda",
-  "subtitle": "15+ yıllık tecrübemizle kaliteli jöle şeker üretiyor ve dünyaya mutluluk yayıyoruz.",
+﻿{
+  "title": "HakkÄ±mÄ±zda",
+  "subtitle": "15+ yÄ±llÄ±k tecrÃ¼bemizle kaliteli jÃ¶le ÅŸeker Ã¼retiyor ve dÃ¼nyaya mutluluk yayÄ±yoruz.",
   "storyTitle": "Hikayemiz",
-  "valuesTitle": "Değerlerimiz",
-  "timelineTitle": "Yolculuğumuz",
-  "certificatesTitle": "Kalite Sertifikalarımız",
-  "company": "Neviza Gıda Sanayi",
+  "valuesTitle": "DeÄŸerlerimiz",
+  "timelineTitle": "YolculuÄŸumuz",
+  "certificatesTitle": "Kalite SertifikalarÄ±mÄ±z",
+  "company": "Neviza GÄ±da Sanayi",
   "story": {
-    "paragraph1": "Neviza olarak, 2010 yılından bu yana jöle şekeri üretiminde Türkiye'nin önde gelen firmalarından biri olarak faaliyet göstermekteyiz. Modern teknoloji ve geleneksel lezzet anlayışını harmanlayarak, kaliteli ve lezzetli ürünler üretiyoruz.",
-    "paragraph2": "Hijyen ve kalite standartlarımız uluslararası normlar doğrultusunda olup, üretim süreçlerimizde sürekli araştırma ve geliştirme faaliyetleri yürütmekteyiz. Bu sayede çocukların ve yetişkinlerin beğenisine hitap eden yenilikçi ürünler sunabilmekteyiz.",
-    "paragraph3": "Dünya çapında 4+ ülkeye ihracat yaparak uluslararası pazarlarda da varlık göstermekteyiz. Müşteri memnuniyeti odaklı yaklaşımımızla, Neviza markasını güvenilir ve kaliteli ürünlerin temsilcisi haline getirdik."
+    "paragraph1": "Neviza olarak, 2010 yÄ±lÄ±ndan bu yana jÃ¶le ÅŸekeri Ã¼retiminde TÃ¼rkiye'nin Ã¶nde gelen firmalarÄ±ndan biri olarak faaliyet gÃ¶stermekteyiz. Modern teknoloji ve geleneksel lezzet anlayÄ±ÅŸÄ±nÄ± harmanlayarak, kaliteli ve lezzetli Ã¼rÃ¼nler Ã¼retiyoruz.",
+    "paragraph2": "Hijyen ve kalite standartlarÄ±mÄ±z uluslararasÄ± normlar doÄŸrultusunda olup, Ã¼retim sÃ¼reÃ§lerimizde sÃ¼rekli araÅŸtÄ±rma ve geliÅŸtirme faaliyetleri yÃ¼rÃ¼tmekteyiz. Bu sayede Ã§ocuklarÄ±n ve yetiÅŸkinlerin beÄŸenisine hitap eden yenilikÃ§i Ã¼rÃ¼nler sunabilmekteyiz.",
+    "paragraph3": "DÃ¼nya Ã§apÄ±nda 4+ Ã¼lkeye ihracat yaparak uluslararasÄ± pazarlarda da varlÄ±k gÃ¶stermekteyiz. MÃ¼ÅŸteri memnuniyeti odaklÄ± yaklaÅŸÄ±mÄ±mÄ±zla, Neviza markasÄ±nÄ± gÃ¼venilir ve kaliteli Ã¼rÃ¼nlerin temsilcisi haline getirdik."
   },
   "values": {
     "quality": {
       "title": "Kalite",
-      "description": "ISO 22000 standartlarında üretim yaparak en yüksek kalite güvencesi sunuyoruz."
+      "description": "ISO 22000 standartlarÄ±nda Ã¼retim yaparak en yÃ¼ksek kalite gÃ¼vencesi sunuyoruz."
     },
     "customerSatisfaction": {
-      "title": "Müşteri Memnuniyeti",
-      "description": "Müşterilerimizin beklentilerini aşmak için sürekli kendimizi geliştiriyoruz."
+      "title": "MÃ¼ÅŸteri Memnuniyeti",
+      "description": "MÃ¼ÅŸterilerimizin beklentilerini aÅŸmak iÃ§in sÃ¼rekli kendimizi geliÅŸtiriyoruz."
     },
     "innovation": {
-      "title": "İnovasyon",
-      "description": "Sürekli araştırma ve geliştirme ile yenilikçi ürünler sunuyoruz."
+      "title": "Ä°novasyon",
+      "description": "SÃ¼rekli araÅŸtÄ±rma ve geliÅŸtirme ile yenilikÃ§i Ã¼rÃ¼nler sunuyoruz."
     },
     "reliability": {
-      "title": "Güvenilirlik",
-      "description": "15 yıllık deneyimimizle sektörde güvenilir bir marka olduk."
+      "title": "GÃ¼venilirlik",
+      "description": "15 yÄ±llÄ±k deneyimimizle sektÃ¶rde gÃ¼venilir bir marka olduk."
     }
   }
 }

@@ -1,87 +1,87 @@
-{
+﻿{
   "navigation": {
     "home": "Ana Sayfa",
-    "about": "Hakkımızda",
-    "products": "Ürünler",
+    "about": "HakkÄ±mÄ±zda",
+    "products": "ÃœrÃ¼nler",
     "quality": "Kalite",
-    "contact": "İletişim"
+    "contact": "Ä°letiÅŸim"
   },
   "hero": {
-    "title": "Mutluluğun En Tatlı Hali",
-    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
-    "buttonText": "Ürünlerimizi Keşfedin"
+    "title": "MutluluÄŸun En TatlÄ± Hali",
+    "description": "2010 yÄ±lÄ±ndan bu yana Ã¼rettiÄŸimiz lezzetli jÃ¶le ÅŸekerlerimizle Ã§ocuklara ve yetiÅŸkinlere keyif sunuyoruz.",
+    "buttonText": "ÃœrÃ¼nlerimizi KeÅŸfedin"
   },
   "home": {
     "statsSection": {
       "title": "Rakamlarla Neviza"
     },
     "stats": {
-      "experience": "Yıllık Deneyim",
-      "experienceDesc": "2010'dan beri sektördeyiz",
-      "customers": "Mutlu Müşteri",
-      "customersDesc": "Türkiye genelinde",
-      "capacity": "Üretim Kapasitesi",
+      "experience": "YÄ±llÄ±k Deneyim",
+      "experienceDesc": "2010'dan beri sektÃ¶rdeyiz",
+      "customers": "Mutlu MÃ¼ÅŸteri",
+      "customersDesc": "TÃ¼rkiye genelinde",
+      "capacity": "Ãœretim Kapasitesi",
       "capacityDesc": "Ton/Ay",
-      "certificates": "Kalite Sertifikası",
-      "certificatesDesc": "Ulusal ve uluslararası"
+      "certificates": "Kalite SertifikasÄ±",
+      "certificatesDesc": "Ulusal ve uluslararasÄ±"
     },
     "productSection": {
-      "title": "Ürün Kategorilerimiz"
+      "title": "ÃœrÃ¼n Kategorilerimiz"
     },
     "products": {
       "nevijel": {
         "name": "Nevijel",
-        "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü. Ana ürünümüz olan Nevijel, 2010'dan beri ürettiğimiz kaliteli ve lezzetli bir seçenek.",
+        "description": "Premium kalitede yumuÅŸak jÃ¶le ÅŸekerlerimizin Ã¶ncÃ¼sÃ¼. Ana Ã¼rÃ¼nÃ¼mÃ¼z olan Nevijel, 2010'dan beri Ã¼rettiÄŸimiz kaliteli ve lezzetli bir seÃ§enek.",
         "features": {
-          "feature1": "Yumuşak dokulu",
-          "feature2": "Meyve aromalı",
-          "feature3": "Doğal renkler",
-          "feature4": "Uzun raf ömrü"
+          "feature1": "YumuÅŸak dokulu",
+          "feature2": "Meyve aromalÄ±",
+          "feature3": "DoÄŸal renkler",
+          "feature4": "Uzun raf Ã¶mrÃ¼"
         }
       },
       "gummyBears": {
-        "name": "Jelibon Ayıcık",
-        "description": "Çocukların en sevdiği renkli ve lezzetli ayıcık şekerleri. Geliştirme aşamasında olan bu ürün çok yakında raflarımızda yerini alacak.",
+        "name": "Jelibon AyÄ±cÄ±k",
+        "description": "Ã‡ocuklarÄ±n en sevdiÄŸi renkli ve lezzetli ayÄ±cÄ±k ÅŸekerleri. GeliÅŸtirme aÅŸamasÄ±nda olan bu Ã¼rÃ¼n Ã§ok yakÄ±nda raflarÄ±mÄ±zda yerini alacak.",
         "features": {
-          "feature1": "Çiğneme keyfi",
-          "feature2": "Renkli görünüm",
+          "feature1": "Ã‡iÄŸneme keyfi",
+          "feature2": "Renkli gÃ¶rÃ¼nÃ¼m",
           "feature3": "Meyve lezzetleri",
-          "feature4": "Eğlenceli şekil"
+          "feature4": "EÄŸlenceli ÅŸekil"
         }
       },
       "fruitRings": {
-        "name": "Meyve Halkaları",
-        "description": "Doğal meyve aromalı halka şeklindeki şekerlerimiz. Yeni ürün geliştirme sürecimizde olan bu lezzetli kategorimiz çok yakında sizlerle.",
+        "name": "Meyve HalkalarÄ±",
+        "description": "DoÄŸal meyve aromalÄ± halka ÅŸeklindeki ÅŸekerlerimiz. Yeni Ã¼rÃ¼n geliÅŸtirme sÃ¼recimizde olan bu lezzetli kategorimiz Ã§ok yakÄ±nda sizlerle.",
         "features": {
-          "feature1": "Halka şekli",
-          "feature2": "Doğal aromalar",
-          "feature3": "Renkli çeşitler",
-          "feature4": "Yumuşak doku"
+          "feature1": "Halka ÅŸekli",
+          "feature2": "DoÄŸal aromalar",
+          "feature3": "Renkli Ã§eÅŸitler",
+          "feature4": "YumuÅŸak doku"
         }
       }
     },
     "productStatus": {
       "available": "Mevcut",
-      "development": "Geliştirme Aşamasında",
-      "comingSoon": "Yakında"
+      "development": "GeliÅŸtirme AÅŸamasÄ±nda",
+      "comingSoon": "YakÄ±nda"
     },
     "buttons": {
-      "details": "Detayları Gör",
-      "comingSoon": "Yakında..."
+      "details": "DetaylarÄ± GÃ¶r",
+      "comingSoon": "YakÄ±nda..."
     },
     "quality": {
-      "title": "Kalite ve Güvende Öncüyüz",
-      "paragraph1": "2010 yılından bu yana, kaliteli jöle şeker üretiminde sektörün öncü firmalarından biriyiz. Modern tesisimizde, en yüksek hijyen standartlarında üretim yapıyoruz.",
-      "paragraph2": "Tüm ürünlerimiz, Türk Gıda Kodeksi ve uluslararası standartlara uygun olarak üretilmekte ve düzenli kalite kontrollerinden geçmektedir.",
-      "paragraph3": "Misyonumuz, çocuklar ve yetişkinler için güvenli, kaliteli ve lezzetli ürünler sunmaktır. Vizyonumuz ise Türkiye'nin jöle şeker sektöründe lider markası olmaktır."
+      "title": "Kalite ve GÃ¼vende Ã–ncÃ¼yÃ¼z",
+      "paragraph1": "2010 yÄ±lÄ±ndan bu yana, kaliteli jÃ¶le ÅŸeker Ã¼retiminde sektÃ¶rÃ¼n Ã¶ncÃ¼ firmalarÄ±ndan biriyiz. Modern tesisimizde, en yÃ¼ksek hijyen standartlarÄ±nda Ã¼retim yapÄ±yoruz.",
+      "paragraph2": "TÃ¼m Ã¼rÃ¼nlerimiz, TÃ¼rk GÄ±da Kodeksi ve uluslararasÄ± standartlara uygun olarak Ã¼retilmekte ve dÃ¼zenli kalite kontrollerinden geÃ§mektedir.",
+      "paragraph3": "Misyonumuz, Ã§ocuklar ve yetiÅŸkinler iÃ§in gÃ¼venli, kaliteli ve lezzetli Ã¼rÃ¼nler sunmaktÄ±r. Vizyonumuz ise TÃ¼rkiye'nin jÃ¶le ÅŸeker sektÃ¶rÃ¼nde lider markasÄ± olmaktÄ±r."
     }
   },
   "footer": {
-    "company": "Neviza Gıda Sanayi",
-    "address": "Konya / Türkiye",
+    "company": "Neviza GÄ±da Sanayi",
+    "address": "Konya / TÃ¼rkiye",
     "email": "nevizagida@gmail.com",
     "phone": "+90 507 651 42 00",
-    "rights": "Tüm hakları saklıdır.",
-    "description": "15 yılı aşkın deneyimle kaliteli jöle şekerleri üretiyoruz."
+    "rights": "TÃ¼m haklarÄ± saklÄ±dÄ±r.",
+    "description": "15 yÄ±lÄ± aÅŸkÄ±n deneyimle kaliteli jÃ¶le ÅŸekerleri Ã¼retiyoruz."
   }
 }

@@ -1,16 +1,16 @@
-import { useLocale } from 'next-intl';
+﻿import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
   const currentLocale = useLocale();
 
-  // Dil bazlı içerik
+  // Dil bazlÄ± iÃ§erik
   const content = {
     tr: {
-      title: 'Mutluluğun En Tatlı Hali',
-      description: '2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.',
-      buttonText: 'Ürünlerimizi Keşfedin',
+      title: 'MutluluÄŸun En TatlÄ± Hali',
+      description: '2010 yÄ±lÄ±ndan bu yana Ã¼rettiÄŸimiz lezzetli jÃ¶le ÅŸekerlerimizle Ã§ocuklara ve yetiÅŸkinlere keyif sunuyoruz.',
+      buttonText: 'ÃœrÃ¼nlerimizi KeÅŸfedin',
     },
     en: {
       title: 'The Sweetest Form of Happiness',
@@ -18,35 +18,35 @@ export default function Hero() {
       buttonText: 'Discover Our Products',
     },
     ar: {
-      title: 'أحلى أشكال السعادة',
-      description: 'نحن نسعد الأطفال والكبار بحلوى الجيلي اللذيذة التي ننتجها منذ عام 2010.',
-      buttonText: 'اكتشف منتجاتنا',
+      title: 'Ø£Ø­Ù„Ù‰ Ø£Ø´ÙƒØ§Ù„ Ø§Ù„Ø³Ø¹Ø§Ø¯Ø©',
+      description: 'Ù†Ø­Ù† Ù†Ø³Ø¹Ø¯ Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„ÙƒØ¨Ø§Ø± Ø¨Ø­Ù„ÙˆÙ‰ Ø§Ù„Ø¬ÙŠÙ„ÙŠ Ø§Ù„Ù„Ø°ÙŠØ°Ø© Ø§Ù„ØªÙŠ Ù†Ù†ØªØ¬Ù‡Ø§ Ù…Ù†Ø° Ø¹Ø§Ù… 2010.',
+      buttonText: 'Ø§ÙƒØªØ´Ù Ù…Ù†ØªØ¬Ø§ØªÙ†Ø§',
     },
     ru: {
-      title: 'Самая Сладкая Форма Счастья',
-      description: 'Мы радуем детей и взрослых нашими вкусными желейными конфетами, производимыми с 2010 года.',
-      buttonText: 'Откройте для себя наши продукты',
+      title: 'Ğ¡Ğ°Ğ¼Ğ°Ñ Ğ¡Ğ»Ğ°Ğ´ĞºĞ°Ñ Ğ¤Ğ¾Ñ€Ğ¼Ğ° Ğ¡Ñ‡Ğ°ÑÑ‚ÑŒÑ',
+      description: 'ĞœÑ‹ Ñ€Ğ°Ğ´ÑƒĞµĞ¼ Ğ´ĞµÑ‚ĞµĞ¹ Ğ¸ Ğ²Ğ·Ñ€Ğ¾ÑĞ»Ñ‹Ñ… Ğ½Ğ°ÑˆĞ¸Ğ¼Ğ¸ Ğ²ĞºÑƒÑĞ½Ñ‹Ğ¼Ğ¸ Ğ¶ĞµĞ»ĞµĞ¹Ğ½Ñ‹Ğ¼Ğ¸ ĞºĞ¾Ğ½Ñ„ĞµÑ‚Ğ°Ğ¼Ğ¸, Ğ¿Ñ€Ğ¾Ğ¸Ğ·Ğ²Ğ¾Ğ´Ğ¸Ğ¼Ñ‹Ğ¼Ğ¸ Ñ 2010 Ğ³Ğ¾Ğ´Ğ°.',
+      buttonText: 'ĞÑ‚ĞºÑ€Ğ¾Ğ¹Ñ‚Ğµ Ğ´Ğ»Ñ ÑĞµĞ±Ñ Ğ½Ğ°ÑˆĞ¸ Ğ¿Ñ€Ğ¾Ğ´ÑƒĞºÑ‚Ñ‹',
     }
   };
   
-  // @ts-ignore - Dil içeriğini al
+  // @ts-ignore - Dil iÃ§eriÄŸini al
   const { title, description, buttonText } = content[currentLocale] || content.tr;
   
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white pt-20 pb-12 md:pt-32 md:pb-20">
-      {/* Dekoratif arka plan şekilleri */}
+      {/* Dekoratif arka plan ÅŸekilleri */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Dağınık şekerlemeler - sol üst */}
+        {/* DaÄŸÄ±nÄ±k ÅŸekerlemeler - sol Ã¼st */}
         <div className="absolute -left-10 -top-10 transform rotate-12">
           <div className="w-32 h-32 rounded-full bg-secondary-yellow opacity-20 blur-2xl"></div>
         </div>
         
-        {/* Dağınık şekerlemeler - sağ alt */}
+        {/* DaÄŸÄ±nÄ±k ÅŸekerlemeler - saÄŸ alt */}
         <div className="absolute right-1/4 bottom-20 transform -rotate-12">
           <div className="w-40 h-40 rounded-full bg-secondary-mint opacity-20 blur-3xl"></div>
         </div>
         
-        {/* Dağınık şekerlemeler - orta */}
+        {/* DaÄŸÄ±nÄ±k ÅŸekerlemeler - orta */}
         <div className="absolute right-10 top-1/3 transform rotate-45">
           <div className="w-24 h-24 rounded-full bg-secondary-coral opacity-20 blur-xl"></div>
         </div>
@@ -75,10 +75,10 @@ export default function Hero() {
                   {/* Halo efekti */}
                   <div className="absolute inset-0 bg-primary-300/20 rounded-full blur-3xl transform scale-125"></div>
                   
-                  {/* Hero görseli - Basit ve garantili çalışan SVG */}
+                  {/* Hero gÃ¶rseli - Basit ve garantili Ã§alÄ±ÅŸan SVG */}
                   <Image 
                     src="/nevijel-product.svg"
-                    alt="Neviza Jöle Şekerler"
+                    alt="Neviza JÃ¶le Åekerler"
                     width={500}
                     height={500}
                     className="relative z-10 drop-shadow-xl w-full h-auto"

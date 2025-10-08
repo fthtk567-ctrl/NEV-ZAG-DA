@@ -1,59 +1,85 @@
-{
-  "title": "Hakkımızda",
-  "subtitle": "15 yılı aşkın tecrübemizle, kaliteli jöle şekerler üretiyor ve tüm dünyaya mutluluk dağıtıyoruz.",
-  "storyTitle": "Hikayemiz",
-  "valuesTitle": "Değerlerimiz",
-  "timelineTitle": "Yolculuğumuz",
-  "certificatesTitle": "Kalite Sertifikalarımız",
-  "company": "Neviza Gıda Sanayi",
-  "story": {
-    "paragraph1": "Neviza olarak, 2010 yılından bu yana Türkiye'nin jöle şekerleme üretimindeki öncü firmalarından biri olarak faaliyet gösteriyoruz. Modern teknolojiyi geleneksel lezzetle birleştirerek, yüksek kaliteli ve lezzetli ürünler üretiyoruz.",
-    "paragraph2": "Hijyen ve kalite standartlarımız uluslararası normlarla uyumlu olup, üretim süreçlerimizde sürekli olarak araştırma-geliştirme faaliyetleri yürütmekteyiz. Bu sayede hem çocukların hem de yetişkinlerin beğenisine hitap eden yenilikçi ürünler sunabiliyoruz.",
-    "paragraph3": "Ayrıca dünya genelinde 4'ten fazla ülkeye ihracat yaparak uluslararası pazarlarda da varlık gösteriyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla Neviza markasını güvenilir ve kaliteli ürünlerin temsilcisi haline getirdik."
-  },
-  "values": {
-    "quality": {
-      "title": "Kalite",
-      "description": "ISO 22000 standartlarına uygun üretim yaparak en yüksek kalite güvencesini sağlıyoruz."
-    },
-    "customerSatisfaction": {
-      "title": "Müşteri Memnuniyeti",
-      "description": "Müşterilerimizin beklentilerini aşmak için kendimizi sürekli geliştiriyoruz."
-    },
-    "innovation": {
-      "title": "Yenilikçilik",
-      "description": "Sürekli araştırma ve geliştirme çalışmalarıyla yenilikçi ürünler sunuyoruz."
-    },
-    "reliability": {
-      "title": "Güvenilirlik",
-      "description": "15 yıllık tecrübemizle sektörde güvenilir bir marka haline geldik."
+﻿{{
+
+  "title": "Hakkımızda",  "title": "HakkÄ±mÄ±zda",
+
+  "subtitle": "15 yılı aşkın tecrübemizle, kaliteli jöle şekerler üretiyor ve tüm dünyaya mutluluk dağıtıyoruz.",  "subtitle": "15 yÄ±lÄ± aÅŸkÄ±n tecrÃ¼bemizle, kaliteli jÃ¶le ÅŸekerler Ã¼retiyor ve tÃ¼m dÃ¼nyaya mutluluk daÄŸÄ±tÄ±yoruz.",
+
+  "storyTitle": "Hikayemiz",  "storyTitle": "Hikayemiz",
+
+  "valuesTitle": "Değerlerimiz",  "valuesTitle": "DeÄŸerlerimiz",
+
+  "timelineTitle": "Yolculuğumuz",  "timelineTitle": "YolculuÄŸumuz",
+
+  "certificatesTitle": "Kalite Sertifikalarımız",  "certificatesTitle": "Kalite SertifikalarÄ±mÄ±z",
+
+  "company": "Neviza Gıda Sanayi",  "company": "Neviza GÄ±da Sanayi",
+
+  "story": {  "story": {
+
+    "paragraph1": "Neviza olarak, 2010 yılından bu yana Türkiye'nin jöle şekerleme üretimindeki öncü firmalarından biri olarak faaliyet gösteriyoruz. Modern teknolojiyi geleneksel lezzetle birleştirerek, yüksek kaliteli ve lezzetli ürünler üretiyoruz.",    "paragraph1": "Neviza olarak, 2010 yÄ±lÄ±ndan bu yana TÃ¼rkiye'nin jÃ¶le ÅŸekerleme Ã¼retimindeki Ã¶ncÃ¼ firmalarÄ±ndan biri olarak faaliyet gÃ¶steriyoruz. Modern teknolojiyi geleneksel lezzetle birleÅŸtirerek, yÃ¼ksek kaliteli ve lezzetli Ã¼rÃ¼nler Ã¼retiyoruz.",
+
+    "paragraph2": "Üretim tesisimizde en son teknoloji ile donatılmış makineler ve uzman ekibimizle, günlük 10 ton üretim kapasitesine sahibiz. Ürünlerimiz, Türkiye'nin dört bir yanına ve dünya genelinde 20'den fazla ülkeye ihraç edilmektedir."    "paragraph2": "Hijyen ve kalite standartlarÄ±mÄ±z uluslararasÄ± normlarla uyumlu olup, Ã¼retim sÃ¼reÃ§lerimizde sÃ¼rekli olarak araÅŸtÄ±rma-geliÅŸtirme faaliyetleri yÃ¼rÃ¼tmekteyiz. Bu sayede hem Ã§ocuklarÄ±n hem de yetiÅŸkinlerin beÄŸenisine hitap eden yenilikÃ§i Ã¼rÃ¼nler sunabiliyoruz.",
+
+  },    "paragraph3": "AyrÄ±ca dÃ¼nya genelinde 4'ten fazla Ã¼lkeye ihracat yaparak uluslararasÄ± pazarlarda da varlÄ±k gÃ¶steriyoruz. MÃ¼ÅŸteri memnuniyeti odaklÄ± yaklaÅŸÄ±mÄ±mÄ±zla Neviza markasÄ±nÄ± gÃ¼venilir ve kaliteli Ã¼rÃ¼nlerin temsilcisi haline getirdik."
+
+  "values": [  },
+
+    {  "values": {
+
+      "title": "Kalite",    "quality": {
+
+      "description": "Her ürünümüzde en yüksek kalite standartlarını sağlıyoruz."      "title": "Kalite",
+
+    },      "description": "ISO 22000 standartlarÄ±na uygun Ã¼retim yaparak en yÃ¼ksek kalite gÃ¼vencesini saÄŸlÄ±yoruz."
+
+    {    },
+
+      "title": "Yenilikçilik",    "customerSatisfaction": {
+
+      "description": "Sürekli gelişim için yeni tatlar ve ürünler geliştiriyoruz."      "title": "MÃ¼ÅŸteri Memnuniyeti",
+
+    },      "description": "MÃ¼ÅŸterilerimizin beklentilerini aÅŸmak iÃ§in kendimizi sÃ¼rekli geliÅŸtiriyoruz."
+
+    {    },
+
+      "title": "Müşteri Memnuniyeti",    "innovation": {
+
+      "description": "Müşterilerimizin mutluluğu bizim önceliğimizdir."      "title": "YenilikÃ§ilik",
+
+    }      "description": "SÃ¼rekli araÅŸtÄ±rma ve geliÅŸtirme Ã§alÄ±ÅŸmalarÄ±yla yenilikÃ§i Ã¼rÃ¼nler sunuyoruz."
+
+  ]    },
+
+}    "reliability": {
+      "title": "GÃ¼venilirlik",
+      "description": "15 yÄ±llÄ±k tecrÃ¼bemizle sektÃ¶rde gÃ¼venilir bir marka haline geldik."
     }
   },
   "timeline": [
     {
       "year": "2010",
-      "title": "Kuruluş",
-      "description": "Neviza Gıda, İzmir'de kuruldu."
+      "title": "KuruluÅŸ",
+      "description": "Neviza GÄ±da, Ä°zmir'de kuruldu."
     },
     {
       "year": "2013",
-      "title": "İlk İhracat",
-      "description": "İlk yurt dışı pazarımız olan Azerbaycan'a ihracata başladık."
+      "title": "Ä°lk Ä°hracat",
+      "description": "Ä°lk yurt dÄ±ÅŸÄ± pazarÄ±mÄ±z olan Azerbaycan'a ihracata baÅŸladÄ±k."
     },
     {
       "year": "2016",
-      "title": "Kapasite Artışı",
-      "description": "Üretim kapasitemizi %40 artırdık."
+      "title": "Kapasite ArtÄ±ÅŸÄ±",
+      "description": "Ãœretim kapasitemizi %40 artÄ±rdÄ±k."
     },
     {
       "year": "2019",
-      "title": "ISO Sertifikası",
-      "description": "ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikasını aldık."
+      "title": "ISO SertifikasÄ±",
+      "description": "ISO 22000 GÄ±da GÃ¼venliÄŸi YÃ¶netim Sistemi sertifikasÄ±nÄ± aldÄ±k."
     },
     {
       "year": "2023",
-      "title": "Yeni Ürün Gamı",
-      "description": "Sağlıklı şeker alternatifli yeni ürün gamımızı piyasaya sunduk."
+      "title": "Yeni ÃœrÃ¼n GamÄ±",
+      "description": "SaÄŸlÄ±klÄ± ÅŸeker alternatifli yeni Ã¼rÃ¼n gamÄ±mÄ±zÄ± piyasaya sunduk."
     }
   ]
 }

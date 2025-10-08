@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -8,10 +8,10 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, Globe } from 'lucide-react';
 
 const locales = [
-  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+  { code: 'tr', name: 'TÃ¼rkÃ§e', flag: 'ğŸ‡¹ğŸ‡·' },
+  { code: 'en', name: 'English', flag: 'ğŸ‡ºğŸ‡¸' },
+  { code: 'ar', name: 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©', flag: 'ğŸ‡¸ğŸ‡¦' },
+  { code: 'ru', name: 'Ğ ÑƒÑÑĞºĞ¸Ğ¹', flag: 'ğŸ‡·ğŸ‡º' },
 ];
 
 export default function Header() {
