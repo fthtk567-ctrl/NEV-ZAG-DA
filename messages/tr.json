@@ -1,0 +1,159 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "quality": "Kalite",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Mutluluğun En Tatlı Hali",
+    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+    "buttonText": "Ürünlerimizi Keşfedin"
+  },
+  "home": {
+    "statsSection": {
+      "title": "Rakamlarla Neviza"
+    },
+    "stats": {
+      "experience": "Yıllık Deneyim",
+      "experienceDesc": "2010'dan beri sektördeyiz",
+      "customers": "Mutlu Müşteri",
+      "customersDesc": "Türkiye genelinde",
+      "capacity": "Üretim Kapasitesi",
+      "capacityDesc": "Ton/Ay",
+      "certificates": "Kalite Sertifikası",
+      "certificatesDesc": "Ulusal ve uluslararası"
+    },
+    "productSection": {
+      "title": "Ürün Kategorilerimiz"
+    },
+    "products": {
+      "nevijel": {
+        "name": "Nevijel",
+        "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü. Ana ürünümüz olan Nevijel, 2010'dan beri ürettiğimiz kaliteli ve lezzetli bir seçenek.",
+        "features": {
+          "feature1": "Yumuşak dokulu",
+          "feature2": "Meyve aromalı",
+          "feature3": "Doğal renkler",
+          "feature4": "Uzun raf ömrü"
+        }
+      },
+      "gummyBears": {
+        "name": "Jelibon Ayıcık",
+        "description": "Çocukların en sevdiği renkli ve lezzetli ayıcık şekerleri. Geliştirme aşamasında olan bu ürün çok yakında raflarımızda yerini alacak.",
+        "features": {
+          "feature1": "Çiğneme keyfi",
+          "feature2": "Renkli görünüm",
+          "feature3": "Meyve lezzetleri",
+          "feature4": "Eğlenceli şekil"
+        }
+      },
+      "fruitRings": {
+        "name": "Meyve Halkaları",
+        "description": "Doğal meyve aromalı halka şeklindeki şekerlerimiz. Yeni ürün geliştirme sürecimizde olan bu lezzetli kategorimiz çok yakında sizlerle.",
+        "features": {
+          "feature1": "Halka şekli",
+          "feature2": "Doğal aromalar",
+          "feature3": "Renkli çeşitler",
+          "feature4": "Yumuşak doku"
+        }
+      }
+    },
+    "productStatus": {
+      "available": "Mevcut",
+      "development": "Geliştirme Aşamasında",
+      "comingSoon": "Yakında"
+    },
+    "buttons": {
+      "details": "Detayları Gör",
+      "comingSoon": "Yakında..."
+    },
+    "quality": {
+      "title": "Kalite ve Güvende Öncüyüz",
+      "paragraph1": "2010 yılından bu yana, kaliteli jöle şeker üretiminde sektörün öncü firmalarından biriyiz. Modern tesisimizde, en yüksek hijyen standartlarında üretim yapıyoruz.",
+      "paragraph2": "Tüm ürünlerimiz, Türk Gıda Kodeksi ve uluslararası standartlara uygun olarak üretilmekte ve düzenli kalite kontrollerinden geçmektedir.",
+      "paragraph3": "Misyonumuz, çocuklar ve yetişkinler için güvenli, kaliteli ve lezzetli ürünler sunmaktır. Vizyonumuz ise Türkiye'nin jöle şeker sektöründe lider markası olmaktır."
+    }
+  },
+  "footer": {
+    "company": "Neviza Gıda Sanayi",
+    "address": "Çumra Organize Sanayi Bölgesi, Çumra/Konya - Türkiye",
+    "email": "nevizagida@gmail.com",
+    "phone": "+90 507 651 42 00",
+    "rights": "Tüm hakları saklıdır.",
+    "description": "15 yılı aşkın deneyimle kaliteli jöle şekerleri üretiyoruz."
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "description": "Bizimle iletişime geçin, sorularınızı yanıtlayalım."
+    },
+    "infoSection": {
+      "title": "İletişim Bilgileri"
+    },
+    "info": {
+      "phone": {
+        "title": "Telefon",
+        "content": "+90 507 651 42 00"
+      },
+      "email": {
+        "title": "E-posta",
+        "content": "nevizagida@gmail.com"
+      },
+      "address": {
+        "title": "Adres",
+        "content": "Çumra Organize Sanayi Bölgesi\nÇumra/Konya"
+      },
+      "hours": {
+        "title": "Çalışma Saatleri",
+        "content": "Pazartesi - Cuma: 08:00 - 18:00\nCumartesi: 09:00 - 14:00"
+      }
+    },
+    "form": {
+      "title": "Mesaj Gönder",
+      "description": "Size nasıl yardımcı olabileceğimizi öğrenmek için formu doldurun.",
+      "name": {
+        "label": "Ad Soyad",
+        "placeholder": "Adınız ve soyadınız"
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "E-posta adresiniz"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+90 5XX XXX XX XX"
+      },
+      "company": {
+        "label": "Şirket",
+        "placeholder": "Şirket adınız"
+      },
+      "subject": {
+        "label": "Konu"
+      },
+      "subjectOptions": {
+        "general": "Genel Bilgi",
+        "sales": "Satış ve Fiyat",
+        "partnership": "İş Ortaklığı",
+        "support": "Teknik Destek"
+      },
+      "message": {
+        "label": "Mesajınız",
+        "placeholder": "Mesajınızı buraya yazın..."
+      },
+      "submit": "Mesaj Gönder"
+    },
+    "map": {
+      "title": "Konumumuz",
+      "description": "Çumra Organize Sanayi Bölgesi'nde bulunan modern tesisimizi ziyaret edebilirsiniz.",
+      "comingSoon": "Harita Yakında Eklenecek"
+    },
+    "quickContact": {
+      "title": "Hızlı İletişim",
+      "description": "Acil durumlar için doğrudan telefon ile arayabilir veya e-posta gönderebilirsiniz.",
+      "call": "Hemen Ara",
+      "email": "E-posta Gönder"
+    }
+  }
+}

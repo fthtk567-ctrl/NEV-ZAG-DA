@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Our Products",
+    "description": "Discover our high-quality jelly candy varieties produced with over 30 years of experience."
+  },
+  "categoriesSection": {
+    "title": "Product Categories",
+    "description": "We appeal to consumers of all ages with our wide range of products."
+  },
+  "categories": {
+    "nevijel": {
+      "title": "Nevijel",
+      "description": "Pioneer of our premium quality soft jelly candies",
+      "features": {
+        "feature1": "Soft texture",
+        "feature2": "Fruit flavored",
+        "feature3": "Natural colors",
+        "feature4": "Long shelf life"
+      }
+    },
+    "gummyBears": {
+      "title": "Gummy Bears",
+      "description": "Colorful and delicious bear-shaped candies loved by children",
+      "features": {
+        "feature1": "Chewing pleasure",
+        "feature2": "Colorful appearance",
+        "feature3": "Fruit flavors",
+        "feature4": "Fun shapes"
+      }
+    }
+  },
+  "status": {
+    "available": "Available",
+    "development": "In Development",
+    "comingSoon": "Coming Soon"
+  },
+  "quality": {
+    "title": "Our Quality Assurance",
+    "description": "All our products are manufactured in hygienic conditions and in our facility approved by the Ministry of Health, with the highest quality standards. We produce safely with our ISO 22000 Food Safety Management System certification."
+  }
+}

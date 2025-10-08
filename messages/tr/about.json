@@ -1,0 +1,59 @@
+{
+  "title": "Hakkımızda",
+  "subtitle": "15 yılı aşkın tecrübemizle, kaliteli jöle şekerler üretiyor ve tüm dünyaya mutluluk dağıtıyoruz.",
+  "storyTitle": "Hikayemiz",
+  "valuesTitle": "Değerlerimiz",
+  "timelineTitle": "Yolculuğumuz",
+  "certificatesTitle": "Kalite Sertifikalarımız",
+  "company": "Neviza Gıda Sanayi",
+  "story": {
+    "paragraph1": "Neviza olarak, 2010 yılından bu yana Türkiye'nin jöle şekerleme üretimindeki öncü firmalarından biri olarak faaliyet gösteriyoruz. Modern teknolojiyi geleneksel lezzetle birleştirerek, yüksek kaliteli ve lezzetli ürünler üretiyoruz.",
+    "paragraph2": "Hijyen ve kalite standartlarımız uluslararası normlarla uyumlu olup, üretim süreçlerimizde sürekli olarak araştırma-geliştirme faaliyetleri yürütmekteyiz. Bu sayede hem çocukların hem de yetişkinlerin beğenisine hitap eden yenilikçi ürünler sunabiliyoruz.",
+    "paragraph3": "Ayrıca dünya genelinde 4'ten fazla ülkeye ihracat yaparak uluslararası pazarlarda da varlık gösteriyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla Neviza markasını güvenilir ve kaliteli ürünlerin temsilcisi haline getirdik."
+  },
+  "values": {
+    "quality": {
+      "title": "Kalite",
+      "description": "ISO 22000 standartlarına uygun üretim yaparak en yüksek kalite güvencesini sağlıyoruz."
+    },
+    "customerSatisfaction": {
+      "title": "Müşteri Memnuniyeti",
+      "description": "Müşterilerimizin beklentilerini aşmak için kendimizi sürekli geliştiriyoruz."
+    },
+    "innovation": {
+      "title": "Yenilikçilik",
+      "description": "Sürekli araştırma ve geliştirme çalışmalarıyla yenilikçi ürünler sunuyoruz."
+    },
+    "reliability": {
+      "title": "Güvenilirlik",
+      "description": "15 yıllık tecrübemizle sektörde güvenilir bir marka haline geldik."
+    }
+  },
+  "timeline": [
+    {
+      "year": "2010",
+      "title": "Kuruluş",
+      "description": "Neviza Gıda, İzmir'de kuruldu."
+    },
+    {
+      "year": "2013",
+      "title": "İlk İhracat",
+      "description": "İlk yurt dışı pazarımız olan Azerbaycan'a ihracata başladık."
+    },
+    {
+      "year": "2016",
+      "title": "Kapasite Artışı",
+      "description": "Üretim kapasitemizi %40 artırdık."
+    },
+    {
+      "year": "2019",
+      "title": "ISO Sertifikası",
+      "description": "ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikasını aldık."
+    },
+    {
+      "year": "2023",
+      "title": "Yeni Ürün Gamı",
+      "description": "Sağlıklı şeker alternatifli yeni ürün gamımızı piyasaya sunduk."
+    }
+  ]
+}

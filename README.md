@@ -1,0 +1,213 @@
+# Neviza Gıda - Jelly Candy Factory Website
+
+![Neviza Gıda Logo](./public/images/brand/neviza-logo.png)
+
+A modern, multilingual website for **Neviza Jelly Candy Factory** - Turkey's trusted confectionery manufacturer since 1998.
+
+## 🍬 About
+
+Neviza Gıda is a leading Turkish candy manufacturer specializing in soft jelly candies, gummy bears, and other confectionery products. This website showcases our products, certifications, and company information in a modern, user-friendly interface.
+
+## ✨ Features
+
+- **🌍 Multilingual Support**: Turkish, English, Arabic, Russian
+- **📱 Responsive Design**: Optimized for all devices
+- **🎨 Modern UI/UX**: Clean, candy-themed design with animations
+- **🔍 SEO Optimized**: Built-in SEO optimization and sitemap generation
+- **⚡ Performance**: Fast loading with Next.js 14 and optimized images
+- **🛡️ Type Safety**: Full TypeScript support
+- **🎯 Accessibility**: WCAG compliant design
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS + Custom Design System
+- **UI Components**: Radix UI + shadcn/ui
+- **Internationalization**: next-intl
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Forms**: React Hook Form + Zod validation
+- **SEO**: next-seo + next-sitemap
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.17.0 or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/neviza-gida/website.git
+   cd neviza-website
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
+
+```bash
+npm run build
+npm run start
+```
+
+## 📁 Project Structure
+
+```
+neviza-website/
+├── public/
+│   ├── images/
+│   │   ├── brand/          # Logo and brand assets
+│   │   ├── products/       # Product images
+│   │   └── factory/        # Factory and certification photos
+├── src/
+│   ├── app/
+│   │   ├── [locale]/       # Internationalized pages
+│   │   │   ├── about/
+│   │   │   ├── products/
+│   │   │   ├── documents/
+│   │   │   └── contact/
+│   │   └── api/           # API routes
+│   ├── components/
+│   │   ├── ui/            # Reusable UI components
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── Hero.tsx
+│   └── lib/
+│       └── utils.ts       # Utility functions
+├── messages/              # Translation files
+│   ├── tr.json           # Turkish
+│   ├── en.json           # English
+│   ├── ar.json           # Arabic
+│   └── ru.json           # Russian
+└── content/              # MDX content files
+```
+
+## 🌐 Available Languages
+
+- **🇹🇷 Turkish** (`/tr`) - Default
+- **🇺🇸 English** (`/en`)
+- **🇸🇦 Arabic** (`/ar`) - RTL support
+- **🇷🇺 Russian** (`/ru`)
+
+## 📄 Pages
+
+1. **Home** (`/`) - Hero, features, product categories, testimonials
+2. **About Us** (`/about`) - Company story, mission, vision, timeline
+3. **Products** (`/products`) - Product categories and specifications
+4. **Documents** (`/documents`) - Certificates and catalogs download
+5. **Contact** (`/contact`) - Contact form and company information
+
+## 🎨 Design System
+
+### Colors
+- **Primary**: Turquoise Blue (`#00B4D8`)
+- **Secondary**: Pastel Yellow (`#FFE17B`), Mint Green (`#A8E6CF`), Peach (`#FFD3B5`)
+
+### Typography
+- **Headlines**: Baloo 2 (playful, rounded)
+- **Body**: Inter (clean, readable)
+
+### Animations
+- Floating candy animations
+- Smooth hover transitions
+- Page transition effects
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env.local` file:
+
+```env
+# Site Configuration
+NEXT_PUBLIC_SITE_URL=https://nevizagida.com
+NEXT_PUBLIC_CONTACT_EMAIL=info@nevizagida.com
+NEXT_PUBLIC_PHONE=+90212555123
+
+# Email Configuration (Optional)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+```
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with default settings
+
+### Manual Deployment
+
+1. Build the application:
+   ```bash
+   npm run build
+   ```
+
+2. Start the production server:
+   ```bash
+   npm run start
+   ```
+
+## 📝 Content Management
+
+### Adding New Products
+
+1. Update product data in `messages/{locale}.json`
+2. Add product images to `public/images/products/`
+3. Update the products page component
+
+### Adding New Languages
+
+1. Create new translation file in `messages/{locale}.json`
+2. Add locale to `middleware.ts`
+3. Update `src/app/[locale]/layout.tsx`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support and questions:
+
+- **Email**: info@nevizagida.com
+- **Phone**: +90 507 651 4200
+- **Website**: [nevizagida.com](https://nevizagida.com)
+
+---
+
+Built with ❤️ by [Neviza Gıda](https://nevizagida.com) - Mutluluğun En Tatlı Hali 🍬

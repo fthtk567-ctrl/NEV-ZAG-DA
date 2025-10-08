@@ -1,0 +1,164 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "quality": "Kalite",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Lezzetin Kaliteli Adresi",
+    "subtitle": "Türkiye'nin öncü jöle şekeri üreticisi olarak, doğal malzemeler ve modern teknoloji ile ürettiğimiz ürünleri dünya çapında sevenlere ulaştırıyoruz.",
+    "cta": "Ürünlerimizi Keşfedin",
+    "watchVideo": "Videoyu İzle",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "home": {
+    "about": {
+      "title": "Neviza'ya Hoş Geldiniz",
+      "description": "Yılların deneyimi ve modern teknolojinin buluştuğu noktada, en kaliteli jöle şekerlerini üretiyoruz. Doğal malzemeler ve titiz kalite kontrol süreçleriyle her ürünümüzde mükemmellik arıyoruz.",
+      "cta": "Daha Fazla Bilgi"
+    },
+    "whyChooseUs": {
+      "title": "Neden Neviza?",
+      "subtitle": "Kalite, güven ve lezzet bir arada",
+      "features": {
+        "hygiene": {
+          "title": "Hijyen Standartları",
+          "description": "ISO 22000 ve HACCP sertifikalı üretim"
+        },
+        "innovation": {
+          "title": "İnovasyon",
+          "description": "Modern teknoloji ile geleneksel lezzet"
+        },
+        "export": {
+          "title": "İhracat Kalitesi",
+          "description": "25+ ülkeye ihracat deneyimi"
+        },
+        "naturalIngredients": {
+          "title": "Doğal Malzemeler",
+          "description": "Sadece doğal ve kaliteli hammaddeler"
+        }
+      }
+    },
+    "productCategories": {
+      "title": "Ürün Kategorilerimiz",
+      "subtitle": "Her yaş grubuna hitap eden geniş ürün yelpazemizle lezzet yolculuğunuza başlayın.",
+      "categories": {
+        "softJelly": {
+          "title": "Yumuşak Jöle",
+          "description": "Ağızda eriyen yumuşak dokulu jöle şekerler"
+        },
+        "gummyBears": {
+          "title": "Jöle Ayıcıklar",
+          "description": "Renkli ve sevimli ayıcık şeklinde jöle şekerler"
+        },
+        "fruitRings": {
+          "title": "Meyve Halkaları",
+          "description": "Doğal meyve aromalı halka şeklinde şekerler"
+        },
+        "eclairs": {
+          "title": "Ekler Şekeri",
+          "description": "Geleneksel ekler tadında özel şekerler"
+        },
+        "toffees": {
+          "title": "Karamela",
+          "description": "Yumuşak ve kremsi karamela şekerler"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Müşteri Yorumları",
+      "subtitle": "Müşterilerimizin deneyimleri",
+      "items": [
+        {
+          "name": "Ahmet Yılmaz",
+          "role": "Market Sahibi",
+          "content": "Neviza ürünleri mağazamızda en çok tercih edilen markalar arasında. Kalitesi ve lezzeti mükemmel."
+        },
+        {
+          "name": "Fatma Kaya",
+          "role": "Toptancı",
+          "content": "Yıllardır Neviza ile çalışıyoruz. Güvenilir kalite ve zamanında teslimat garantisi."
+        },
+        {
+          "name": "Mehmet Demir",
+          "role": "İhracatçı",
+          "content": "Uluslararası pazarlarda Neviza markası ile gurur duyarak çalışıyoruz."
+        }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Hakkımızda",
+      "subtitle": "Jöle şekeri sektöründe öncü konumumuz ve kalite anlayışımızla tanışın."
+    },
+    "content": {
+      "title": "Neviza Jöle Şekeri Fabrikası",
+      "paragraph1": "Neviza olarak, 1995 yılından bu yana jöle şekeri üretiminde Türkiye'nin önde gelen firmalarından biri olarak faaliyet göstermekteyiz. Modern teknoloji ve geleneksel lezzet anlayışını harmanlayarak, kaliteli ve lezzetli ürünler üretiyoruz.",
+      "paragraph2": "Doğal malzemeler kullanarak ürettiğimiz jöle şekerlerimiz, titiz kalite kontrol süreçlerinden geçerek müşterilerimize ulaşır. ISO 22000, HACCP ve Helal sertifikalarımızla uluslararası standartlarda üretim yapıyoruz.",
+      "paragraph3": "Müşteri memnuniyetini ön planda tutarak, sürekli gelişen ürün yelpazemizle hem yurt içi hem de yurt dışı pazarlarda güvenilir bir marka olma yolunda kararlılıkla ilerliyoruz."
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle iletişime geçin, sorularınızı yanıtlayalım.",
+    "info": {
+      "title": "İletişim Bilgileri",
+      "address": {
+        "title": "Adres",
+        "value": "Organize Sanayi Bölgesi\n1. Cadde No: 15\n16140 Nilüfer/Bursa"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+90 224 411 22 33"
+      },
+      "email": {
+        "title": "E-posta",
+        "value": "info@nevizagida.com"
+      },
+      "hours": {
+        "title": "Çalışma Saatleri",
+        "value": "Pazartesi - Cuma: 08:00 - 18:00\nCumartesi: 09:00 - 14:00"
+      }
+    },
+    "form": {
+      "title": "Mesaj Gönder",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Gönder"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "Neviza Gıda",
+      "description": "Türkiye'nin önde gelen jöle şekeri üreticisi olarak, doğal ve kaliteli ürünler sunuyoruz."
+    },
+    "links": {
+      "title": "Hızlı Linkler",
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "products": "Ürünler",
+      "quality": "Kalite",
+      "contact": "İletişim"
+    },
+    "contact": {
+      "title": "İletişim",
+      "address": "Organize Sanayi Bölgesi, Bursa",
+      "phone": "+90 224 411 22 33",
+      "email": "info@nevizagida.com"
+    },
+    "social": {
+      "title": "Sosyal Medya"
+    },
+    "bottom": {
+      "copyright": "© 2024 Neviza Gıda. Tüm hakları saklıdır.",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Şartları"
+    }
+  }
+}

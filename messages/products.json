@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Ürünlerimiz",
+    "description": "30 yılı aşkın tecrübemizle ürettiğimiz kaliteli jöle şeker çeşitlerimizi keşfedin."
+  },
+  "categoriesSection": {
+    "title": "Ürün Kategorilerimiz",
+    "description": "Geniş ürün yelpazemizle her yaştan tüketicinin beğenisine hitap ediyoruz."
+  },
+  "categories": {
+    "nevijel": {
+      "title": "Nevijel",
+      "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü",
+      "features": {
+        "feature1": "Yumuşak dokulu",
+        "feature2": "Meyve aromalı",
+        "feature3": "Doğal renkler",
+        "feature4": "Uzun raf ömrü"
+      }
+    },
+    "gummyBears": {
+      "title": "Jelibon Ayıcık",
+      "description": "Çocukların en sevdiği renkli ve lezzetli ayıcık şekerler",
+      "features": {
+        "feature1": "Çiğneme keyfi",
+        "feature2": "Renkli görünüm",
+        "feature3": "Meyve lezzetleri",
+        "feature4": "Eğlenceli şekil"
+      }
+    }
+  },
+  "status": {
+    "available": "Satışta",
+    "development": "Geliştirme Aşamasında",
+    "comingSoon": "Yakında"
+  },
+  "quality": {
+    "title": "Kalite Güvencemiz",
+    "description": "Tüm ürünlerimiz en yüksek kalite standartlarında, hijyenik koşullarda ve sağlık bakanlığı onaylı tesisimizde üretilmektedir. ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikamızla güvenli üretim yapıyoruz."
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <defs>
+    <style>
+      .logo-text-main { 
+        font-family: Arial, sans-serif; 
+        font-size: 28px; 
+        font-weight: bold; 
+        fill: #2c5aa0; 
+      }
+      .logo-text-sub { 
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        fill: #666; 
+      }
+      .logo-dot { 
+        fill: #4a90e2; 
+      }
+    </style>
+  </defs>
+  
+  <!-- Main brand name -->
+  <text x="10" y="35" class="logo-text-main">Neviza</text>
+  
+  <!-- Subtitle -->
+  <text x="10" y="55" class="logo-text-sub">Gıda</text>
+  
+  <!-- Decorative dots -->
+  <circle cx="140" cy="20" r="3" class="logo-dot"/>
+  <circle cx="150" cy="25" r="2.5" class="logo-dot" opacity="0.8"/>
+  <circle cx="160" cy="20" r="3" class="logo-dot"/>
+  <circle cx="170" cy="25" r="2.5" class="logo-dot" opacity="0.8"/>
+</svg>

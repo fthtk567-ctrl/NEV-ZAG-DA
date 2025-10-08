@@ -1,0 +1,87 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "quality": "Quality",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "The Sweetest Form of Happiness",
+    "description": "We have been delighting children and adults with our delicious jelly candies produced since 2010.",
+    "buttonText": "Discover Our Products"
+  },
+  "home": {
+    "statsSection": {
+      "title": "Neviza in Numbers"
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "experienceDesc": "In the industry since 2010",
+      "customers": "Happy Customers",
+      "customersDesc": "Throughout Turkey",
+      "capacity": "Production Capacity",
+      "capacityDesc": "Tons/Month",
+      "certificates": "Quality Certificates",
+      "certificatesDesc": "National and international"
+    },
+    "productSection": {
+      "title": "Our Product Categories"
+    },
+    "products": {
+      "nevijel": {
+        "name": "Nevijel",
+        "description": "Our flagship soft jelly candy of premium quality. Nevijel, our main product, is a quality and delicious option we've been producing since 2010.",
+        "features": {
+          "feature1": "Soft texture",
+          "feature2": "Fruit flavored",
+          "feature3": "Natural colors",
+          "feature4": "Long shelf life"
+        }
+      },
+      "gummyBears": {
+        "name": "Gummy Bears",
+        "description": "Colorful and delicious bear-shaped candies that children love. This product, which is in the development phase, will be on our shelves very soon.",
+        "features": {
+          "feature1": "Chewing pleasure",
+          "feature2": "Colorful appearance",
+          "feature3": "Fruit flavors",
+          "feature4": "Fun shapes"
+        }
+      },
+      "fruitRings": {
+        "name": "Fruit Rings",
+        "description": "Our ring-shaped candies with natural fruit flavors. This delicious category, which is in our new product development process, will be with you very soon.",
+        "features": {
+          "feature1": "Ring shape",
+          "feature2": "Natural flavors",
+          "feature3": "Colorful varieties",
+          "feature4": "Soft texture"
+        }
+      }
+    },
+    "productStatus": {
+      "available": "Available",
+      "development": "In Development",
+      "comingSoon": "Coming Soon"
+    },
+    "buttons": {
+      "details": "View Details",
+      "comingSoon": "Coming Soon..."
+    },
+    "quality": {
+      "title": "Leaders in Quality and Safety",
+      "paragraph1": "Since 2010, we have been one of the leading companies in the production of quality jelly candies. We produce in our modern facility to the highest hygiene standards.",
+      "paragraph2": "All our products are produced in accordance with the Turkish Food Codex and international standards and undergo regular quality controls.",
+      "paragraph3": "Our mission is to provide safe, quality, and delicious products for children and adults. Our vision is to be the leading brand in Turkey's jelly candy industry."
+    }
+  },
+  "footer": {
+    "company": "Neviza Food Industry",
+    "address": "Konya / Turkey",
+    "email": "nevizagida@gmail.com",
+    "phone": "+90 507 651 42 00",
+    "rights": "All rights reserved.",
+    "description": "We produce quality jelly candies with over 15 years of experience."
+  }
+}
