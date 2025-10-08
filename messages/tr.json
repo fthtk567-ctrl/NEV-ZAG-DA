@@ -1,56 +1,45 @@
-﻿{{
-
-  "navigation": {  "navigation": {
-
-    "home": "Ana Sayfa",    "home": "Ana Sayfa",
-
-    "about": "Hakkımızda",    "about": "HakkÄ±mÄ±zda",
-
-    "products": "Ürünler",    "products": "ÃœrÃ¼nler",
-
-    "quality": "Kalite",    "quality": "Kalite",
-
-    "contact": "İletişim"    "contact": "Ä°letiÅŸim"
-
-  },  },
-
-  "hero": {  "hero": {
-
-    "title": "Mutluluğun En Tatlı Hali",    "title": "MutluluÄŸun En TatlÄ± Hali",
-
-    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",    "description": "2010 yÄ±lÄ±ndan bu yana Ã¼rettiÄŸimiz lezzetli jÃ¶le ÅŸekerlerimizle Ã§ocuklara ve yetiÅŸkinlere keyif sunuyoruz.",
-
-    "buttonText": "Ürünlerimizi Keşfedin"    "buttonText": "ÃœrÃ¼nlerimizi KeÅŸfedin"
-
-  },  },
-
-  "home": {  "home": {
-
-    "statsSection": {    "statsSection": {
-
-      "title": "Rakamlarla Neviza"      "title": "Rakamlarla Neviza"
-
-    },    },
-
-    "stats": {    "stats": {
-
-      "experience": "Yıllık Deneyim",      "experience": "YÄ±llÄ±k Deneyim",
-
-      "experienceDesc": "2010'dan beri sektördeyiz",      "experienceDesc": "2010'dan beri sektÃ¶rdeyiz",
-
-      "products": "Ürün",      "customers": "Mutlu MÃ¼ÅŸteri",
-
-      "productsDesc": "çeşit şekerleme",      "customersDesc": "TÃ¼rkiye genelinde",
-
-      "countries": "Ülke",      "capacity": "Ãœretim Kapasitesi",
-
-      "countriesDesc": "ihracat yapıyoruz"      "capacityDesc": "Ton/Ay",
-
-    }      "certificates": "Kalite SertifikasÄ±",
-
-  }      "certificatesDesc": "Ulusal ve uluslararasÄ±"
-
-}    },
+﻿{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "quality": "Kalite",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Mutluluğun En Tatlı Hali",
+    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+    "buttonText": "Ürünlerimizi Keşfedin"
+  },
+  "home": {
+    "statsSection": {
+      "title": "Rakamlarla Neviza"
+    },
+    "stats": {
+      "experience": "Yıllık Deneyim",
+      "experienceDesc": "2010'dan beri sektördeyiz",
+      "products": "Ürün",
+      "productsDesc": "çeşit şekerleme",
+      "countries": "Ülke",
+      "countriesDesc": "ihracat yapıyoruz"
+    }
+  },
+  "footer": {
+    "company": "Neviza Gıda Sanayi",
+    "address": "Çumra Organize Sanayi Bölgesi, Çumra/Konya - Türkiye",
+    "email": "nevizagida@gmail.com",
+    "phone": "+90 507 651 42 00",
+    "rights": "Tüm hakları saklıdır.",
+    "description": "15 yılı aşkın deneyimle kaliteli jöle şekerleri üretiyoruz."
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "description": "Bizimle iletişime geçin, sorularınızı yanıtlayalım."
+    }
+    // ... diğer alanları da aynı şekilde ekleyebilirsin ...
+  }
+}
     "productSection": {
       "title": "ÃœrÃ¼n Kategorilerimiz"
     },

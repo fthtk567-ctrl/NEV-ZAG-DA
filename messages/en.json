@@ -1,22 +1,13 @@
-﻿{{
-
-  "navigation": {  "navigation": {
-
-    "home": "Home",    "home": "Home",
-
-    "about": "About",    "about": "About Us",
-
-    "products": "Products",    "products": "Products",
-
-    "quality": "Quality",    "quality": "Quality",
-
-    "contact": "Contact"    "contact": "Contact"
-
-  },  },
-
-  "hero": {  "hero": {
-
-    "title": "The Sweetest Form of Happiness",    "title": "The Sweetest Form of Happiness",
+﻿{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "quality": "Quality",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "The Sweetest Form of Happiness",
 
     "description": "Since 2010, we've been bringing joy to children and adults with our delicious jelly candies.",    "description": "We have been delighting children and adults with our delicious jelly candies produced since 2010.",
 
@@ -119,33 +110,33 @@
       "title": "Contact Information"
     },
     "info": {
-      "phone": {
-        "title": "Phone",
-        "content": "+90 507 651 42 00"
-      },
-      "email": {
-        "title": "Email",
-        "content": "nevizagida@gmail.com"
-      },
-      "address": {
-        "title": "Address",
-        "content": "Ã‡umra Organized Industrial Zone\nÃ‡umra/Konya"
-      },
-      "hours": {
-        "title": "Working Hours",
-        "content": "Monday - Friday: 08:00 - 18:00\nSaturday: 09:00 - 14:00"
+      {
+        "navigation": {
+          "home": "Home",
+          "about": "About Us",
+          "products": "Products",
+          "quality": "Quality",
+          "contact": "Contact"
+        },
+        "hero": {
+          "title": "The Sweetest Form of Happiness",
+          "description": "Since 2010, we've been bringing joy to children and adults with our delicious jelly candies.",
+          "buttonText": "Discover Our Products"
+        },
+        "home": {
+          "statsSection": {
+            "title": "Neviza in Numbers"
+          },
+          "stats": {
+            "experience": "Years Experience",
+            "experienceDesc": "In the industry since 2010",
+            "products": "Products",
+            "productsDesc": "variety of candies",
+            "countries": "Countries",
+            "countriesDesc": "we export to"
+          }
+        }
       }
-    },
-    "form": {
-      "title": "Send Message",
-      "description": "Fill out the form to learn how we can help you.",
-      "name": {
-        "label": "Full Name",
-        "placeholder": "Your first and last name"
-      },
-      "email": {
-        "label": "Email",
-        "placeholder": "Your email address"
       },
       "phone": {
         "label": "Phone",
