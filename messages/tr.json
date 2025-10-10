@@ -1,4 +1,9 @@
 ﻿{
+  "hero": {
+    "title": "Mutluluğun En Tatlı Hali",
+    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+    "buttonText": "Ürünlerimizi Keşfedin"
+  },
   "navigation": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",

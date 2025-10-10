@@ -8,7 +8,7 @@ interface ProductsPageProps {
 }
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
-  const { locale } = params;
+  const locale = await params.locale;
   setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz

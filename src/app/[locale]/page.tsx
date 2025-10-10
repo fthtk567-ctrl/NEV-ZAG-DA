@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default async function HomePage({ params }: Props) {
-  const { locale } = params;
+  const locale = await params.locale;
   setRequestLocale(locale);
   
   // Çevirileri server tarafında getTranslations ile alıyoruz

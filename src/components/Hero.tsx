@@ -1,33 +1,11 @@
-﻿import { useLocale } from 'next-intl';
+﻿import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Hero() {
-  const currentLocale = useLocale();
-
-  // Dil bazlı içerik
-  const content = {
-    tr: {
-      title: "Mutluluğun En Tatlı Hali",
-      description: "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
-      buttonText: "Ürünlerimizi Keşfedin",
-    },
-    en: {
-      title: "The Sweetest Form of Happiness",
-      description: "We have been delighting children and adults with our delicious jelly candies produced since 2010.",
-      buttonText: "Discover Our Products",
-    },
-    ar: {
-      title: "أحلى أشكال السعادة",
-      description: "نحن نسعد الأطفال والكبار بحلوى الجيلي اللذيذة التي ننتجها منذ عام 2010.",
-      buttonText: "اكتشف منتجاتنا",
-    },
-    ru: {
-      title: "Самая Сладкая Форма Счастья",
-      description: "Мы радуем детей и взрослых нашими вкусными желейными конфетами, производимыми с 2010 года.",
-      buttonText: "Откройте для себя наши продукты",
-    }
-  };
+export default async function Hero() {
+  const t = await getTranslations();
+  
+  // Component artık çevirileri next-intl üzerinden alıyor
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-primary-50/50">
@@ -37,16 +15,16 @@ export default function Hero() {
           {/* Sol Taraf - Metin İçeriği */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
-              {content[currentLocale as keyof typeof content].title}
+              {t('hero.title')}
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8">
-              {content[currentLocale as keyof typeof content].description}
+              {t('hero.description')}
             </p>
             <Link
-              href={"/" + currentLocale + "/products"}
+              href="/products"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#00BFB3] hover:bg-[#00a79c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00BFB3] transition-colors duration-200"
             >
-              {content[currentLocale as keyof typeof content].buttonText}
+              {t('hero.buttonText')}
             </Link>
           </div>
 

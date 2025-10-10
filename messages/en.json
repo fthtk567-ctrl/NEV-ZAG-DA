@@ -1,4 +1,9 @@
 ﻿{
+  "hero": {
+    "title": "The Sweetest Form of Happiness",
+    "description": "We have been delighting children and adults with our delicious jelly candies produced since 2010.",
+    "buttonText": "Discover Our Products"
+  },
   "navigation": {
     "home": "Home",
     "about": "About Us",

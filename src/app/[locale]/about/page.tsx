@@ -6,13 +6,12 @@ import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'l
 interface AboutPageProps {
   params: {
     locale: string;
-    [key: string]: string | string[];
   };
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {
-  const { locale } = params;
+  const locale = await params.locale;
   setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz
