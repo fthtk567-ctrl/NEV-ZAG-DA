@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
+    typedRoutes: true,
   },
 
   trailingSlash: false,
