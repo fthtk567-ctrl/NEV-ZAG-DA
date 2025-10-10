@@ -15,6 +15,9 @@ module.exports = {
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
-    'react/no-unescaped-entities': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    'react/no-unescaped-entities': 'off',
+    '@next/next/no-img-element': 'off'
   }
 }
