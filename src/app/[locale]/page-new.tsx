@@ -1,46 +1,50 @@
 import { setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import Hero from '@/components/Hero';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
+import { PageProps } from '@/types/page';
+
+type Props = PageProps;
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  // Çevirileri server tarafında getTranslations ile alıyoruz
+  const t = await getTranslations();
 
   // Şirket istatistikleri
   const companyStats = [
     { 
       id: 1, 
       value: '15+', 
-      label: 'Yıllık Deneyim',
-      description: '2010\'dan beri sektördeyiz',
+      label: t('home.stats.experience'),
+      description: t('home.stats.experienceDesc'),
       icon: <Award className="h-6 w-6 text-primary-500" /> 
     },
     { 
       id: 2, 
       value: '250+', 
-      label: 'Mutlu Müşteri',
-      description: 'Türkiye genelinde',
+      label: t('home.stats.customers'),
+      description: t('home.stats.customersDesc'),
       icon: <Heart className="h-6 w-6 text-pink-500" /> 
     },
     { 
       id: 3, 
       value: '50+', 
-      label: 'Üretim Kapasitesi',
-      description: 'Ton/Ay',
+      label: t('home.stats.capacity'),
+      description: t('home.stats.capacityDesc'),
       icon: <Sparkles className="h-6 w-6 text-amber-500" /> 
     },
     { 
       id: 4, 
       value: '5', 
-      label: 'Kalite Sertifikası',
-      description: 'Ulusal ve uluslararası',
+      label: t('home.stats.certificates'),
+      description: t('home.stats.certificatesDesc'),
       icon: <Star className="h-6 w-6 text-yellow-500" /> 
     },
   ];
@@ -49,33 +53,45 @@ export default async function HomePage({ params }: Props) {
   const productCategories = [
     {
       id: 'nevijel',
-      name: 'Nevijel',
-      description: 'Premium kalitede yumuşak jöle şekerlerimizin öncüsü. Ana ürünümüz olan Nevijel, 2010\'dan beri ürettiğimiz kaliteli ve lezzetli bir seçenek.',
+      name: t('home.products.nevijel.name'),
+      description: t('home.products.nevijel.description'),
       image: '/nevijel-product.svg',
-      features: ['Yumuşak dokulu', 'Meyve aromalı', 'Doğal renkler', 'Uzun raf ömrü'],
+      features: [
+        t('home.products.nevijel.features.feature1'),
+        t('home.products.nevijel.features.feature2'),
+        t('home.products.nevijel.features.feature3'),
+        t('home.products.nevijel.features.feature4')
+      ],
       gradient: 'from-pink-400 to-purple-300',
       status: 'available',
-      link: `/${locale}/products/nevijel`,
     },
     {
       id: 'gummy-bears',
-      name: 'Jelibon Ayıcık',
-      description: 'Çocukların en sevdiği renkli ve lezzetli ayıcık şekerleri. Geliştirme aşamasında olan bu ürün çok yakında raflarımızda yerini alacak.',
+      name: t('home.products.gummyBears.name'),
+      description: t('home.products.gummyBears.description'),
       image: '/gummy-bear.svg',
-      features: ['Çiğneme keyfi', 'Renkli görünüm', 'Meyve lezzetleri', 'Eğlenceli şekil'],
+      features: [
+        t('home.products.gummyBears.features.feature1'),
+        t('home.products.gummyBears.features.feature2'),
+        t('home.products.gummyBears.features.feature3'),
+        t('home.products.gummyBears.features.feature4')
+      ],
       gradient: 'from-yellow-400 to-amber-300',
       status: 'development',
-      link: `/${locale}/products/gummy-bears`,
     },
     {
       id: 'fruit-rings',
-      name: 'Meyve Halkaları',
-      description: 'Doğal meyve aromalı halka şeklindeki şekerlerimiz. Yeni ürün geliştirme sürecimizde olan bu lezzetli kategorimiz çok yakında sizlerle.',
+      name: t('home.products.fruitRings.name'),
+      description: t('home.products.fruitRings.description'),
       image: '/fruit-ring.svg',
-      features: ['Halka şekli', 'Doğal aromalar', 'Renkli çeşitler', 'Yumuşak doku'],
+      features: [
+        t('home.products.fruitRings.features.feature1'),
+        t('home.products.fruitRings.features.feature2'),
+        t('home.products.fruitRings.features.feature3'),
+        t('home.products.fruitRings.features.feature4')
+      ],
       gradient: 'from-orange-400 to-red-300',
       status: 'coming-soon',
-      link: `/${locale}/products/fruit-rings`,
     },
   ];
 
@@ -86,7 +102,7 @@ export default async function HomePage({ params }: Props) {
       {/* Company Stats Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Rakamlarla Neviza</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">{t('home.statsSection.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {companyStats.map((stat) => (
               <Card key={stat.id} className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
@@ -111,7 +127,7 @@ export default async function HomePage({ params }: Props) {
       {/* Product Categories Section */}
       <section className="py-16">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Ürün Kategorilerimiz</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">{t('home.productSection.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {productCategories.map((category) => (
               <div 
@@ -122,11 +138,11 @@ export default async function HomePage({ params }: Props) {
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-bold">{category.name}</h3>
                     {category.status === 'available' ? (
-                      <span className="px-2 py-1 text-xs font-semibold rounded bg-green-100 text-green-800">Mevcut</span>
+                      <span className="px-2 py-1 text-xs font-semibold rounded bg-green-100 text-green-800">{t('home.productStatus.available')}</span>
                     ) : category.status === 'development' ? (
-                      <span className="px-2 py-1 text-xs font-semibold rounded bg-amber-100 text-amber-800">Geliştirme Aşamasında</span>
+                      <span className="px-2 py-1 text-xs font-semibold rounded bg-amber-100 text-amber-800">{t('home.productStatus.development')}</span>
                     ) : (
-                      <span className="px-2 py-1 text-xs font-semibold rounded bg-blue-100 text-blue-800">Yakında</span>
+                      <span className="px-2 py-1 text-xs font-semibold rounded bg-blue-100 text-blue-800">{t('home.productStatus.comingSoon')}</span>
                     )}
                   </div>
                   
@@ -151,17 +167,17 @@ export default async function HomePage({ params }: Props) {
                   <div className="mt-auto">
                     {category.status === 'available' ? (
                       <Link 
-                        href={category.link} 
+                        href={`/${locale}/products/${category.id}` as any}
                         className="inline-flex items-center justify-center rounded-md bg-primary-500 px-4 py-2 text-sm font-medium text-white shadow hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-1 w-full"
                       >
-                        Detayları Gör
+                        {t('home.buttons.details')}
                       </Link>
                     ) : (
                       <button 
                         disabled 
                         className="inline-flex items-center justify-center rounded-md bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 shadow hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 w-full cursor-not-allowed"
                       >
-                        Yakında...
+                        {t('home.buttons.comingSoon')}
                       </button>
                     )}
                   </div>
@@ -177,15 +193,15 @@ export default async function HomePage({ params }: Props) {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">Kalite ve Güvende Öncüyüz</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('home.quality.title')}</h2>
               <p className="text-gray-700 mb-6">
-                2010 yılından bu yana, kaliteli jöle şeker üretiminde sektörün öncü firmalarından biriyiz. Modern tesisimizde, en yüksek hijyen standartlarında üretim yapıyoruz.
+                {t('home.quality.paragraph1')}
               </p>
               <p className="text-gray-700 mb-6">
-                Tüm ürünlerimiz, Türk Gıda Kodeksi ve uluslararası standartlara uygun olarak üretilmekte ve düzenli kalite kontrollerinden geçmektedir.
+                {t('home.quality.paragraph2')}
               </p>
               <p className="text-gray-700">
-                Misyonumuz, çocuklar ve yetişkinler için güvenli, kaliteli ve lezzetli ürünler sunmaktır. Vizyonumuz ise Türkiye'nin jöle şeker sektöründe lider markası olmaktır.
+                {t('home.quality.paragraph3')}
               </p>
             </div>
             <div className="md:w-1/2 flex justify-center">

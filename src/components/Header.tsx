@@ -22,18 +22,18 @@ export default function Header() {
   const t = useTranslations("navigation");
   
   const navigation = [
-    { name: t("home"), href: "/" + currentLocale },
-    { name: t("about"), href: "/" + currentLocale + "/about" },
-    { name: t("products"), href: "/" + currentLocale + "/products" },
-    { name: t("contact"), href: "/" + currentLocale + "/contact" }
-  ];
+    { name: t("home"), href: `/${currentLocale}` as const },
+    { name: t("about"), href: `/${currentLocale}/about` as const },
+    { name: t("products"), href: `/${currentLocale}/products` as const },
+    { name: t("contact"), href: `/${currentLocale}/contact` as const }
+  ] as const;
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href={"/" + currentLocale} className="flex items-center">
+          <Link href={`/${currentLocale}`} className="flex items-center">
             <div className="relative w-24 h-12 flex items-center justify-center">
               <Image 
                 src="/neviza-logo-final.svg" 
@@ -81,7 +81,7 @@ export default function Header() {
                   {locales.map((locale) => (
                     <Link
                       key={locale.code}
-                      href={"/" + locale.code}
+                      href={`/${locale.code}`}
                       className={"flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors " +
                         (currentLocale === locale.code ? "bg-primary-50 text-primary-600" : "text-gray-700")
                       }

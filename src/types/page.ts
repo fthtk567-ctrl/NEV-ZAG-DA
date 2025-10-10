@@ -3,12 +3,12 @@ export interface LocaleParams {
 }
 
 export interface PageProps<P = Record<string, unknown>> {
-  params: LocaleParams & P;
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: Promise<LocaleParams & P>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 declare module 'next' {
   interface PageProps {
-    params: LocaleParams;
+    params: Promise<LocaleParams>;
   }
 }

@@ -11,7 +11,7 @@ import { PageProps } from '@/types/page';
 type Props = PageProps;
 
 export default async function HomePage({ params }: Props) {
-  const locale = await Promise.resolve(params.locale);
+  const { locale } = await params;
   setRequestLocale(locale);
   
   // Çevirileri server tarafında getTranslations ile alıyoruz

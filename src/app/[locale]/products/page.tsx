@@ -8,7 +8,7 @@ import { PageProps } from '@/types/page';
 type ProductsPageProps = PageProps;
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
-  const locale = await Promise.resolve(params.locale);
+  const { locale } = await params;
   setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz

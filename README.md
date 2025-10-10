@@ -188,6 +188,38 @@ SMTP_PASS=your-app-password
 2. Add locale to `middleware.ts`
 3. Update `src/app/[locale]/layout.tsx`
 
+## 🔒 Translation File Protection
+
+Translation files are protected from accidental modification. Use these PowerShell scripts to manage them:
+
+### Lock Translation Files (Recommended)
+```powershell
+.\scripts\lock-translations.ps1
+```
+Makes all translation files read-only to prevent accidental edits.
+
+### Unlock Translation Files
+```powershell
+.\scripts\unlock-translations.ps1
+```
+Removes read-only protection when you need to update translations.
+
+### Backup Translation Files
+```powershell
+.\scripts\backup-translations.ps1
+```
+Creates a timestamped backup of all translation files in `backups/` directory.
+
+### Update Translations Safely
+
+1. Unlock files: `.\scripts\unlock-translations.ps1`
+2. Make your changes in `messages/` directory
+3. Test the changes: `npm run dev`
+4. Create backup: `.\scripts\backup-translations.ps1`
+5. Lock files again: `.\scripts\lock-translations.ps1`
+
+**Note**: Translation files in `messages/` directory are automatically locked after running `merge-translations.js`
+
 ## 🤝 Contributing
 
 1. Fork the repository

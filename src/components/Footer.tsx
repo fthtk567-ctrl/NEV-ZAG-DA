@@ -13,11 +13,11 @@ export default function Footer() {
   
   const navigation = {
     main: [
-      { name: t('home'), href: `/${currentLocale}` },
-      { name: t('about'), href: `/${currentLocale}/about` },
-      { name: t('products'), href: `/${currentLocale}/products` },
-      { name: t('contact'), href: `/${currentLocale}/contact` },
-    ],
+      { name: t('home'), href: `/${currentLocale}` as const },
+      { name: t('about'), href: `/${currentLocale}/about` as const },
+      { name: t('products'), href: `/${currentLocale}/products` as const },
+      { name: t('contact'), href: `/${currentLocale}/contact` as const },
+    ] as const,
     social: [
       {
         name: 'Instagram',
