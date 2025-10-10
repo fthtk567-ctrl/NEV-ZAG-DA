@@ -154,7 +154,54 @@ SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 ```
 
-## 🚀 Deployment
+## � File Protection System
+
+### Protecting Critical Files
+
+All critical project files are automatically locked to prevent accidental modifications:
+
+**Lock all critical files:**
+```bash
+npm run lock:all
+```
+
+**Unlock for editing:**
+```bash
+npm run unlock:all
+```
+
+**Protected files include:**
+- Translation files (`messages/*.json`)
+- Type definitions (`src/types/page.ts`)
+- Configuration files (`next.config.ts`, `tsconfig.json`)
+- Core components (`Header.tsx`, `Footer.tsx`)
+- i18n setup (`src/i18n.ts`, `src/middleware.ts`)
+
+**⚠️ IMPORTANT:** Always unlock before making changes, then lock again after committing!
+
+### Translation Management
+
+**Rebuild all translations:**
+```bash
+node scripts/rebuild-translations.js
+```
+
+**Lock translations only:**
+```bash
+npm run translations:lock
+```
+
+**Unlock translations:**
+```bash
+npm run translations:unlock
+```
+
+**Backup translations:**
+```bash
+npm run translations:backup
+```
+
+## �🚀 Deployment
 
 ### Vercel (Recommended)
 

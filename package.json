@@ -11,7 +11,9 @@
     "translations:merge": "node merge-translations.js",
     "translations:lock": "powershell -ExecutionPolicy Bypass -File ./scripts/lock-translations.ps1",
     "translations:unlock": "powershell -ExecutionPolicy Bypass -File ./scripts/unlock-translations.ps1",
-    "translations:backup": "powershell -ExecutionPolicy Bypass -File ./scripts/backup-translations.ps1"
+    "translations:backup": "powershell -ExecutionPolicy Bypass -File ./scripts/backup-translations.ps1",
+    "lock:all": "powershell -ExecutionPolicy Bypass -File ./scripts/lock-all-critical-files.ps1",
+    "unlock:all": "powershell -ExecutionPolicy Bypass -File ./scripts/unlock-all-critical-files.ps1"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.0.0",
