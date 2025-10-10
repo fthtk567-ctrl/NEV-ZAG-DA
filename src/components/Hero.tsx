@@ -15,16 +15,16 @@ export default async function Hero() {
           {/* Sol Taraf - Metin İçeriği */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
-              {t('hero.title')}
+              {t('homeHero.title')}
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8">
-              {t('hero.description')}
+              {t('homeHero.description')}
             </p>
             <Link
               href="/products"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#00BFB3] hover:bg-[#00a79c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00BFB3] transition-colors duration-200"
             >
-              {t('hero.buttonText')}
+              {t('homeHero.buttonText')}
             </Link>
           </div>
 
