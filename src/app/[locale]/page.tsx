@@ -6,12 +6,9 @@ import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Props = {
-  params: { 
-    locale: string | Promise<string> 
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-};
+import { PageProps } from '@/types/page';
+
+type Props = PageProps;
 
 export default async function HomePage({ params }: Props) {
   const locale = await Promise.resolve(params.locale);

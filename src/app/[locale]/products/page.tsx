@@ -3,9 +3,9 @@ import { getTranslations } from 'next-intl/server';
 import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
-interface ProductsPageProps {
-  params: { locale: string | Promise<string> };
-}
+import { PageProps } from '@/types/page';
+
+type ProductsPageProps = PageProps;
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
   const locale = await Promise.resolve(params.locale);

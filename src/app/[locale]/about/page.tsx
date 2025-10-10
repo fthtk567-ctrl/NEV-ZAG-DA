@@ -3,12 +3,9 @@ import { getTranslations } from 'next-intl/server';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'lucide-react';
 
-interface AboutPageProps {
-  params: {
-    locale: string | Promise<string>;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
+import { PageProps } from '@/types/page';
+
+type AboutPageProps = PageProps;
 
 export default async function AboutPage({ params }: AboutPageProps) {
   const locale = await Promise.resolve(params.locale);
