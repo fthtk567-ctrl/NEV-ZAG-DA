@@ -4,12 +4,12 @@ import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
 interface ProductsPageProps {
-  params: { locale: string };
+  params: { locale: string | Promise<string> };
 }
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
-  const locale = params.locale;
-  await setRequestLocale(locale);
+  const locale = await Promise.resolve(params.locale);
+  setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz
   const t = await getTranslations();

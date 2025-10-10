@@ -7,12 +7,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type Props = {
-  params: { locale: string };
+  params: { 
+    locale: string | Promise<string> 
+  };
+  searchParams?: { [key: string]: string | string[] | undefined };
 };
 
 export default async function HomePage({ params }: Props) {
-  const locale = params.locale;
-  await setRequestLocale(locale);
+  const locale = await Promise.resolve(params.locale);
+  setRequestLocale(locale);
   
   // Çevirileri server tarafında getTranslations ile alıyoruz
   const t = await getTranslations();
