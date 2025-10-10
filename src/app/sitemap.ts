@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://nev-zag-da.vercel.app';
+  const baseUrl = 'https://www.nevizagida.com';
   const locales = ['tr', 'en', 'ru', 'ar'];
   const pages = ['', '/about', '/products', '/contact', '/privacy', '/terms'];
 

@@ -18,7 +18,7 @@ const baloo2 = Baloo_2({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nev-zag-da.vercel.app'),
+  metadataBase: new URL('https://www.nevizagida.com'),
   title: {
     template: "%s | Neviza Gıda",
     default: "Neviza Gıda - Mutluluğun En Tatlı Hali",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://nevizagida.com",
+    url: "https://www.nevizagida.com",
     siteName: "Neviza Gıda",
     title: "Neviza Gıda - Mutluluğun En Tatlı Hali",
     description: "Türkiye'nin güvenilir şeker markası. Kaliteli ve lezzetli şeker üretiminde 25 yıllık deneyim.",
@@ -108,8 +108,8 @@ export default async function LocaleLayout({
               "@type": "Organization",
               "name": "Neviza Gıda Sanayi",
               "alternateName": "Neviza",
-              "url": "https://nev-zag-da.vercel.app",
-              "logo": "https://nev-zag-da.vercel.app/neviza-logo-final.svg",
+              "url": "https://www.nevizagida.com",
+              "logo": "https://www.nevizagida.com/neviza-logo-final.svg",
               "description": "Türkiye'nin güvenilir jöle şeker üreticisi. 2010'dan beri kaliteli ve lezzetli ürünler sunuyoruz.",
               "address": {
                 "@type": "PostalAddress",
