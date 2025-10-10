@@ -18,6 +18,7 @@ const baloo2 = Baloo_2({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nev-zag-da.vercel.app'),
   title: {
     template: "%s | Neviza Gıda",
     default: "Neviza Gıda - Mutluluğun En Tatlı Hali",
@@ -94,6 +95,42 @@ export default async function LocaleLayout({
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#00B4D8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+        
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Neviza Gıda Sanayi",
+              "alternateName": "Neviza",
+              "url": "https://nev-zag-da.vercel.app",
+              "logo": "https://nev-zag-da.vercel.app/neviza-logo-final.svg",
+              "description": "Türkiye'nin güvenilir jöle şeker üreticisi. 2010'dan beri kaliteli ve lezzetli ürünler sunuyoruz.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Çumra Organize Sanayi Bölgesi",
+                "addressLocality": "Çumra",
+                "addressRegion": "Konya",
+                "addressCountry": "TR"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+90-507-651-42-00",
+                "contactType": "customer service",
+                "email": "nevizagida@gmail.com"
+              },
+              "sameAs": [
+                "https://www.instagram.com/nevizagida/",
+                "https://www.facebook.com/nevizagida/"
+              ]
+            })
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${baloo2.variable} font-body antialiased bg-gradient-soft min-h-screen flex flex-col`}>
         <NextIntlClientProvider messages={messages}>

@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nev-zag-da.vercel.app/sitemap.xml
+
+# Disallow admin pages (if any)
+Disallow: /api/
