@@ -199,8 +199,9 @@
       "paragraph3": "We use only the finest natural ingredients"
     },
     "status": {
-      "available": "Available",
-      "comingSoon": "Coming Soon"
+  "available": "Available",
+  "development": "In Development",
+  "comingSoon": "Coming Soon"
     }
   },
   "footer": {
