@@ -12,6 +12,10 @@
     "buttonText": "Discover Our Products"
   },
   "home": {
+    "buttons": {
+      "details": "Details",
+      "comingSoon": "Coming Soon"
+    },
     "statsSection": {
       "title": "Neviza in Numbers"
     },
@@ -78,6 +82,24 @@
     }
   },
   "about": {
+    "values": [
+      {
+        "title": "Quality",
+        "description": "We maintain the highest quality standards in all our processes"
+      },
+      {
+        "title": "Innovation",
+        "description": "Continuously developing new products and improving our processes"
+      },
+      {
+        "title": "Trust",
+        "description": "Building lasting relationships with our customers and partners"
+      },
+      {
+        "title": "Customer Focus",
+        "description": "Always putting our customers' needs first"
+      }
+    ],
     "title": "About Us",
     "subtitle": "Creating the finest jelly candies since 2010",
     "company": "Neviza Food Industry",
