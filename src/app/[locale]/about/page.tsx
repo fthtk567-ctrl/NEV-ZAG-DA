@@ -5,7 +5,7 @@ import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'l
 
 interface AboutPageProps {
   params: {
-    locale: string;
+    locale: Promise<string>;
   };
   searchParams?: { [key: string]: string | string[] | undefined };
 }

@@ -4,7 +4,7 @@ import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
 interface ProductsPageProps {
-  params: { locale: string };
+  params: { locale: Promise<string> };
 }
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
