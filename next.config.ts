@@ -4,9 +4,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  typedRoutes: true,
   experimental: {
-    optimizePackageImports: ['lucide-react'],
-    typedRoutes: true,
+    optimizePackageImports: ['lucide-react']
   },
 
   trailingSlash: false,
