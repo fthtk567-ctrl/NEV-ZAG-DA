@@ -4,7 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'lucide-react';
 
 interface AboutPageProps {
-  params: { locale: string };
+  params: {
+    locale: string;
+    [key: string]: string | string[];
+  };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {
