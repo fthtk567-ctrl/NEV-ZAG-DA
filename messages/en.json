@@ -32,6 +32,11 @@
     "productSection": {
       "title": "Featured Products"
     },
+    "productStatus": {
+      "available": "Available",
+      "development": "In Development",
+      "comingSoon": "Coming Soon"
+    },
     "products": {
       "fruitRings": {
         "name": "Fruit Rings",

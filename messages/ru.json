@@ -1,4 +1,59 @@
 ﻿{
+  "home": {
+    "statsSection": {
+      "title": "Статистика Neviza"
+    },
+    "stats": {
+      "certificates": "Сертификаты качества",
+      "certificatesDesc": "Международные сертификаты качества",
+      "capacity": "тонн в месяц",
+      "capacityDesc": "Производственная мощность",
+      "customers": "довольных клиентов",
+      "customersDesc": "Клиенты по всему миру",
+      "experience": "лет опыта",
+      "experienceDesc": "В производстве конфет"
+    },
+    "productSection": {
+      "title": "Наши особые продукты"
+    },
+    "productStatus": {
+      "available": "Доступно",
+      "development": "В разработке",
+      "comingSoon": "Скоро в продаже"
+    },
+    "products": {
+      "fruitRings": {
+        "name": "Фруктовые кольца",
+        "description": "Цветные желейные кольца с натуральными фруктовыми вкусами",
+        "features": {
+          "feature1": "Натуральные вкусы",
+          "feature2": "Натуральные красители",
+          "feature3": "Без желатина",
+          "feature4": "Подходит для вегетарианцев"
+        }
+      },
+      "gummyBears": {
+        "name": "Мишки Гамми",
+        "description": "Вкусные желейные конфеты в форме медвежат",
+        "features": {
+          "feature1": "Забавные формы",
+          "feature2": "Разные вкусы",
+          "feature3": "Идеально для детей",
+          "feature4": "Семейная упаковка"
+        }
+      },
+      "nevijel": {
+        "name": "Невижель",
+        "description": "Оригинальные желейные конфеты от Neviza",
+        "features": {
+          "feature1": "Оригинальный рецепт",
+          "feature2": "Насыщенный вкус",
+          "feature3": "Идеальная текстура",
+          "feature4": "Любимый выбор"
+        }
+      }
+    }
+  },
   "navigation": {
     "home": "Главная",
     "about": "О нас",
