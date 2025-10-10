@@ -27,6 +27,24 @@
         "feature3": "Fruit flavors",
         "feature4": "Fun shapes"
       }
+    },
+    "jelibon": {
+      "title": "Jelly Beans",
+      "description": "Colorful and delicious candies loved by children",
+      "features": {
+        "feature1": "Chewing pleasure",
+        "feature2": "Colorful appearance",
+        "feature3": "Fruit flavors"
+      }
+    },
+    "halkali": {
+      "title": "Ring Candies",
+      "description": "Preferred by those who cannot give up classic flavors",
+      "features": {
+        "feature1": "Traditional taste",
+        "feature2": "Fun ring shape",
+        "feature3": "Various flavors"
+      }
     }
   },
   "status": {

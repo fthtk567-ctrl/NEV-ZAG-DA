@@ -235,6 +235,11 @@
       "description": "Acil durumlar için doğrudan telefon ile arayabilir veya e-posta gönderebilirsiniz.",
       "call": "Hemen Ara",
       "email": "E-posta Gönder"
+    },
+    "map": {
+      "title": "Konumumuz",
+      "description": "Çumra Organize Sanayi Bölgesi'ndeyiz",
+      "comingSoon": "Harita yakında eklenecek"
     }
   }
 }

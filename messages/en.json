@@ -41,6 +41,10 @@
       {
         "title": "Customer Satisfaction",
         "description": "We always prioritize customer satisfaction in all our processes."
+      },
+      {
+        "title": "Reliability",
+        "description": "With our decade of experience, we have become a trusted brand in the industry."
       }
     ]
   },
@@ -64,14 +68,22 @@
           "feature4": "Long shelf life"
         }
       },
-      "gummyBears": {
-        "title": "Gummy Bears",
-        "description": "Colorful and delicious bear-shaped candies loved by children",
+      "jelibon": {
+        "title": "Jelly Beans",
+        "description": "Colorful and delicious candies loved by children",
         "features": {
           "feature1": "Chewing pleasure",
           "feature2": "Colorful appearance",
-          "feature3": "Fruit flavors",
-          "feature4": "Fun shapes"
+          "feature3": "Fruit flavors"
+        }
+      },
+      "halkali": {
+        "title": "Ring Candies",
+        "description": "Preferred by those who cannot give up classic flavors",
+        "features": {
+          "feature1": "Traditional taste",
+          "feature2": "Fun ring shape",
+          "feature3": "Various flavors"
         }
       }
     },
@@ -223,6 +235,11 @@
       "description": "For urgent matters, you can call directly or send an email.",
       "call": "Call Now",
       "email": "Send Email"
+    },
+    "map": {
+      "title": "Our Location",
+      "description": "We are in Çumra Organized Industrial Zone",
+      "comingSoon": "Map coming soon"
     }
   }
 }
