@@ -5,14 +5,14 @@ import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'l
 
 interface AboutPageProps {
   params: {
-    locale: Promise<string>;
+    locale: string;
   };
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {
-  const locale = await params.locale;
-  setRequestLocale(locale);
+  const locale = params.locale;
+  await setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz
   const t = await getTranslations();
