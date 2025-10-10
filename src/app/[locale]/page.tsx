@@ -7,11 +7,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type Props = {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 };
 
 export default async function HomePage({ params }: Props) {
-  const { locale } = await params;
+  const { locale } = params;
   setRequestLocale(locale);
   
   // Çevirileri server tarafında getTranslations ile alıyoruz

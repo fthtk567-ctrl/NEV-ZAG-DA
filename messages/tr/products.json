@@ -1,41 +1,49 @@
-﻿{
+{
   "hero": {
-    "title": "ÃœrÃ¼nlerimiz",
-    "description": "30 yÄ±lÄ± aÅŸkÄ±n tecrÃ¼bemizle Ã¼rettiÄŸimiz kaliteli jÃ¶le ÅŸeker Ã§eÅŸitlerimizi keÅŸfedin."
+    "title": "Ürünlerimiz",
+    "description": "30 yılı aşkın tecrübemizle ürettiğimiz kaliteli jöle şeker çeşitlerimizi keşfedin."
   },
   "categoriesSection": {
-    "title": "ÃœrÃ¼n Kategorilerimiz",
-    "description": "GeniÅŸ Ã¼rÃ¼n yelpazemizle her yaÅŸtan tÃ¼keticinin beÄŸenisine hitap ediyoruz."
+    "title": "Ürün Kategorilerimiz",
+    "description": "Geniş ürün yelpazemizle her yaştan tüketicinin beğenisine hitap ediyoruz."
   },
   "categories": {
     "nevijel": {
       "title": "Nevijel",
-      "description": "Premium kalitede yumuÅŸak jÃ¶le ÅŸekerlerimizin Ã¶ncÃ¼sÃ¼",
+      "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü",
       "features": {
-        "feature1": "YumuÅŸak dokulu",
-        "feature2": "Meyve aromalÄ±",
-        "feature3": "DoÄŸal renkler",
-        "feature4": "Uzun raf Ã¶mrÃ¼"
+        "feature1": "Yumuşak dokulu",
+        "feature2": "Meyve aromalı",
+        "feature3": "Doğal renkler",
+        "feature4": "Uzun raf ömrü"
       }
     },
-    "gummyBears": {
-      "title": "Jelibon AyÄ±cÄ±k",
-      "description": "Ã‡ocuklarÄ±n en sevdiÄŸi renkli ve lezzetli ayÄ±cÄ±k ÅŸekerler",
+    "jelibon": {
+      "title": "Jelibon",
+      "description": "Çocukların en sevdiği renkli ve lezzetli şekerler",
       "features": {
-        "feature1": "Ã‡iÄŸneme keyfi",
-        "feature2": "Renkli gÃ¶rÃ¼nÃ¼m",
-        "feature3": "Meyve lezzetleri",
-        "feature4": "EÄŸlenceli ÅŸekil"
+        "feature1": "Çiğneme keyfi",
+        "feature2": "Renkli görünüm",
+        "feature3": "Meyve lezzetleri"
+      }
+    },
+    "halkali": {
+      "title": "Halkalı Şeker",
+      "description": "Klasik lezzetlerden vazgeçemeyenlerin tercihi",
+      "features": {
+        "feature1": "Geleneksel lezzet",
+        "feature2": "Eğlenceli halka şekli",
+        "feature3": "Çeşitli aromalar"
       }
     }
   },
   "status": {
-    "available": "SatÄ±ÅŸta",
-    "development": "GeliÅŸtirme AÅŸamasÄ±nda",
-    "comingSoon": "YakÄ±nda"
+    "available": "Satışta",
+    "development": "Geliştirme Aşamasında",
+    "comingSoon": "Yakında"
   },
   "quality": {
-    "title": "Kalite GÃ¼vencemiz",
-    "description": "TÃ¼m Ã¼rÃ¼nlerimiz en yÃ¼ksek kalite standartlarÄ±nda, hijyenik koÅŸullarda ve saÄŸlÄ±k bakanlÄ±ÄŸÄ± onaylÄ± tesisimizde Ã¼retilmektedir. ISO 22000 GÄ±da GÃ¼venliÄŸi YÃ¶netim Sistemi sertifikamÄ±zla gÃ¼venli Ã¼retim yapÄ±yoruz."
+    "title": "Kalite Güvencemiz",
+    "description": "Tüm ürünlerimiz en yüksek kalite standartlarında, hijyenik koşullarda ve Sağlık Bakanlığı onaylı tesisimizde üretilmektedir. ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikamızla güvenli üretim yapıyoruz."
   }
 }

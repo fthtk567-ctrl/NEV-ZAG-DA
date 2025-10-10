@@ -4,46 +4,59 @@ import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
 interface ProductsPageProps {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
-  const { locale } = await params;
+  const { locale } = params;
   setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz
-  const t = await getTranslations('products');
+  const t = await getTranslations();
 
   const productCategories = [
     {
       id: 'nevijel',
-      title: t('categories.nevijel.title'),
-      description: t('categories.nevijel.description'),
+      title: t('products.categories.nevijel.title'),
+      description: t('products.categories.nevijel.description'),
       features: [
-        t('categories.nevijel.features.feature1'),
-        t('categories.nevijel.features.feature2'),
-        t('categories.nevijel.features.feature3'),
-        t('categories.nevijel.features.feature4')
+        t('products.categories.nevijel.features.feature1'),
+        t('products.categories.nevijel.features.feature2'),
+        t('products.categories.nevijel.features.feature3'),
+        t('products.categories.nevijel.features.feature4')
       ],
       colors: 'bg-gradient-to-br from-blue-400 to-purple-500',
       icon: Sparkles,
       available: true,
-      status: t('status.available')
+      status: t('products.status.available')
     },
     {
-      id: 'gummyBears',
-      title: t('categories.gummyBears.title'),
-      description: t('categories.gummyBears.description'),
+      id: 'jelibon',
+      title: t('products.categories.jelibon.title'),
+      description: t('products.categories.jelibon.description'),
       features: [
-        t('categories.gummyBears.features.feature1'),
-        t('categories.gummyBears.features.feature2'),
-        t('categories.gummyBears.features.feature3'),
-        t('categories.gummyBears.features.feature4')
+        t('products.categories.jelibon.features.feature1'),
+        t('products.categories.jelibon.features.feature2'),
+        t('products.categories.jelibon.features.feature3')
       ],
-      colors: 'bg-gradient-to-br from-green-400 to-blue-500',
-      icon: Heart,
+      colors: 'bg-gradient-to-br from-rose-400 to-red-500',
+      icon: Sparkles,
       available: true,
-      status: t('status.available')
+      status: t('products.status.available')
+    },
+    {
+      id: 'halkali',
+      title: t('products.categories.halkali.title'),
+      description: t('products.categories.halkali.description'),
+      features: [
+        t('products.categories.halkali.features.feature1'),
+        t('products.categories.halkali.features.feature2'),
+        t('products.categories.halkali.features.feature3')
+      ],
+      colors: 'bg-gradient-to-br from-emerald-400 to-green-500',
+      icon: Sparkles,
+      available: false,
+      status: t('products.status.comingSoon')
     }
   ];
 
@@ -65,10 +78,10 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-headline font-bold text-gray-900 mb-4">
-              {t('categoriesSection.title')}
+              {t('products.categoriesSection.title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              {t('categoriesSection.description')}
+              {t('products.categoriesSection.description')}
             </p>
           </div>
 
@@ -139,10 +152,10 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {t('quality.title')}
+              {t('products.quality.title')}
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              {t('quality.description')}
+              {t('products.quality.description')}
             </p>
           </div>
         </div>

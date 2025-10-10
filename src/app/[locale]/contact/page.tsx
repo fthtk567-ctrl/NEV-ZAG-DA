@@ -160,7 +160,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+905076514200"
-                className="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-medium"
+                className="inline-flex items-center gap-2 bg-[#00BFB3] text-white px-6 py-3 rounded-lg hover:bg-[#00a79c] transition-colors font-medium"
               >
                 <Phone className="w-5 h-5" />
                 {t('quickContact.call')}

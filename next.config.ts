@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
+
   trailingSlash: false,
   poweredByHeader: false,
   generateEtags: false,

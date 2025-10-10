@@ -4,36 +4,36 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'lucide-react';
 
 interface AboutPageProps {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {
-  const { locale } = await params;
+  const { locale } = params;
   setRequestLocale(locale);
   
   // Çevirileri getTranslations ile alıyoruz
-  const t = await getTranslations('about');
+  const t = await getTranslations();
 
   const companyValues = [
     {
       icon: Shield,
-      title: t('values.quality.title'),
-      description: t('values.quality.description')
+      title: t('about.values.0.title'),
+      description: t('about.values.0.description')
     },
     {
       icon: Heart,
-      title: t('values.customerSatisfaction.title'),
-      description: t('values.customerSatisfaction.description')
+      title: t('about.values.2.title'),
+      description: t('about.values.2.description')
     },
     {
       icon: Target,
-      title: t('values.innovation.title'),
-      description: t('values.innovation.description')
+      title: t('about.values.1.title'),
+      description: t('about.values.1.description')
     },
     {
       icon: Users,
-      title: t('values.reliability.title'),
-      description: t('values.reliability.description')
+      title: t('about.values.3.title'),
+      description: t('about.values.3.description')
     }
   ];
 
@@ -43,10 +43,10 @@ export default async function AboutPage({ params }: AboutPageProps) {
       <section className="bg-gradient-to-br from-gray-800 to-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-6xl font-headline font-bold text-white mb-6">
-            {t('title')}
+            {t('about.title')}
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-            {t('subtitle')}
+            {t('about.subtitle')}
           </p>
         </div>
       </section>
@@ -56,17 +56,17 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline font-bold text-gray-900 mb-8">
-              {t('company')}
+              {t('about.company')}
             </h2>
             <div className="prose prose-lg mx-auto text-gray-800">
               <p className="text-xl leading-relaxed mb-6 text-gray-800">
-                {t('story.paragraph1')}
+                {t('about.story.paragraph1')}
               </p>
               <p className="text-xl leading-relaxed mb-6 text-gray-800">
-                {t('story.paragraph2')}
+                {t('about.story.paragraph2')}
               </p>
               <p className="text-xl leading-relaxed text-gray-800">
-                {t('story.paragraph3')}
+                {t('about.story.paragraph3')}
               </p>
             </div>
           </div>

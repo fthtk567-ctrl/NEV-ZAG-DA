@@ -1,4 +1,4 @@
-{
+﻿{
   "navigation": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
@@ -6,9 +6,91 @@
     "quality": "Kalite",
     "contact": "İletişim"
   },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "2010 yılından beri kaliteli jöle şekerler üretiyor ve tüm dünyaya mutluluk dağıtıyoruz.",
+    "storyTitle": "Hikayemiz",
+    "valuesTitle": "Değerlerimiz",
+    "timelineTitle": "Yolculuğumuz",
+    "certificatesTitle": "Kalite Sertifikalarımız",
+    "company": "Neviza Gıda Sanayi",
+    "story": {
+      "paragraph1": "Neviza olarak, 2010 yılından bu yana Türkiye'nin jöle şekerleme üretimindeki öncü firmalarından biri olarak faaliyet gösteriyoruz. Modern teknolojiyi geleneksel lezzetle birleştirerek, yüksek kaliteli ve lezzetli ürünler üretiyoruz.",
+      "paragraph2": "Hijyen ve kalite standartlarımız uluslararası normlarla uyumlu olup, üretim süreçlerimizde sürekli olarak araştırma-geliştirme faaliyetleri yürütmekteyiz. Bu sayede hem çocukların hem de yetişkinlerin beğenisine hitap eden yenilikçi ürünler sunabiliyoruz.",
+      "paragraph3": "Ayrıca dünya genelinde 4'ten fazla ülkeye ihracat yaparak uluslararası pazarlarda da varlık gösteriyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla Neviza markasını güvenilir ve kaliteli ürünlerin temsilcisi haline getirdik."
+    },
+    "values": [
+      {
+        "title": "Kalite",
+        "description": "ISO 22000 standartlarına uygun üretim yaparak en yüksek kalite güvencesini sağlıyoruz."
+      },
+      {
+        "title": "Yenilikçilik",
+        "description": "Sürekli gelişim için yeni tatlar ve ürünler geliştiriyoruz."
+      },
+      {
+        "title": "Müşteri Memnuniyeti",
+        "description": "Tüm süreçlerimizde müşteri memnuniyetini ön planda tutuyoruz."
+      },
+      {
+        "title": "Güvenilirlik",
+        "description": "On yıllık tecrübemizle sektörde güvenilir bir marka haline geldik."
+      }
+    ]
+  },
+  "products": {
+    "hero": {
+      "title": "Ürünlerimiz",
+      "description": "30 yılı aşkın tecrübemizle ürettiğimiz kaliteli jöle şeker çeşitlerimizi keşfedin."
+    },
+    "categoriesSection": {
+      "title": "Ürün Kategorilerimiz",
+      "description": "Geniş ürün yelpazemizle her yaştan tüketicinin beğenisine hitap ediyoruz."
+    },
+    "categories": {
+      "nevijel": {
+        "title": "Nevijel",
+        "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü",
+        "features": {
+          "feature1": "Yumuşak dokulu",
+          "feature2": "Meyve aromalı",
+          "feature3": "Doğal renkler",
+          "feature4": "Uzun raf ömrü"
+        }
+      },
+      "jelibon": {
+        "title": "Jelibon",
+        "description": "Çocukların en sevdiği renkli ve lezzetli şekerler",
+        "features": {
+          "feature1": "Çiğneme keyfi",
+          "feature2": "Renkli görünüm",
+          "feature3": "Meyve lezzetleri"
+        }
+      },
+      "halkali": {
+        "title": "Halkalı Şeker",
+        "description": "Klasik lezzetlerden vazgeçemeyenlerin tercihi",
+        "features": {
+          "feature1": "Geleneksel lezzet",
+          "feature2": "Eğlenceli halka şekli",
+          "feature3": "Çeşitli aromalar"
+        }
+      }
+    },
+    "status": {
+      "available": "Satışta",
+      "development": "Geliştirme Aşamasında",
+      "comingSoon": "Yakında"
+    },
+    "quality": {
+      "title": "Kalite Güvencemiz",
+      "description": "Tüm ürünlerimiz en yüksek kalite standartlarında, hijyenik koşullarda ve Sağlık Bakanlığı onaylı tesisimizde üretilmektedir. ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikamızla güvenli üretim yapıyoruz."
+    }
+  },
   "hero": {
     "title": "Mutluluğun En Tatlı Hali",
-    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+    "subtitle": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+    "description": "Neviza olarak, modern tesislerimizde hijyenik koşullarda ürettiğimiz kaliteli ürünlerimizle hem iç pazar hem de ihracat pazarında müşterilerimize hizmet veriyoruz.",
     "buttonText": "Ürünlerimizi Keşfedin"
   },
   "home": {
@@ -16,6 +98,12 @@
       "title": "Rakamlarla Neviza"
     },
     "stats": {
+      "customers": "Mutlu Müşteri",
+      "customersDesc": "Dünya genelinde 250'den fazla mutlu müşterimiz var",
+      "capacity": "Ton Üretim",
+      "capacityDesc": "Aylık 50 ton üretim kapasitesiyle hizmet veriyoruz",
+      "certificates": "Kalite Belgesi",
+      "certificatesDesc": "Uluslararası standartlarda 5 kalite belgesine sahibiz",
       "experience": "Yıllık Deneyim",
       "experienceDesc": "2010'dan beri sektördeyiz",
       "products": "Ürün",

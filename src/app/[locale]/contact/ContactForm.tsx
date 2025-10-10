@@ -156,7 +156,7 @@ export default function ContactForm({ translations }: ContactFormProps) {
             ></textarea>
           </div>
 
-          <Button type="submit" className="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2">
+          <Button type="submit" className="w-full bg-[#00BFB3] hover:bg-[#00a79c] text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2">
             <Send className="w-5 h-5" />
             {form.submit}
           </Button>
