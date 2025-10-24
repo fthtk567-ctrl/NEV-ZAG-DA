@@ -12,13 +12,19 @@ export default getRequestConfig(async ({ locale }) => {
 
   try {
     const messages = (await import(`../messages/${loc}.json`)).default;
-    return { messages };
+    return { 
+      locale: loc,
+      messages 
+    };
   } catch (err) {
     // Fallback to default locale if import fails
     // Log for debugging in server output
     // eslint-disable-next-line no-console
     console.error('Could not load messages for locale', loc, err);
     const fallback = (await import(`../messages/${defaultLocale}.json`)).default;
-    return { messages: fallback };
+    return { 
+      locale: defaultLocale,
+      messages: fallback 
+    };
   }
 });

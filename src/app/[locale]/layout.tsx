@@ -3,6 +3,7 @@ import { Inter, Baloo_2 } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import "../globals.css";
@@ -24,16 +25,33 @@ export const metadata: Metadata = {
     default: "Neviza Gıda - Mutluluğun En Tatlı Hali",
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/images/brand/apple-touch-icon.png',
   },
+  manifest: '/site.webmanifest',
   description: "Neviza Gıda olarak güvenli ve kaliteli ürün sunumu ile Türkiye'nin güvenilir şeker markasıyız. Nevijel ve diğer yumuşak şeker çeşitleriyle çocuklara ve dünyaya neşe katıyoruz.",
-  keywords: ["neviza", "gıda", "şeker", "jelibon", "nevijel", "ayıcık şeker", "türk markası", "kaliteli şeker"],
+  keywords: ["neviza", "gıda", "şeker", "jelibon", "nevijel", "ayıcık şeker", "türk markası", "kaliteli şeker", "jöle şeker", "yumuşak şeker", "çocuk şekeri", "neviza gıda"],
   authors: [{ name: "Neviza Gıda" }],
   creator: "Neviza Gıda",
   publisher: "Neviza Gıda",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   openGraph: {
     type: "website",
@@ -47,7 +65,7 @@ export const metadata: Metadata = {
         url: "/images/brand/neviza-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Neviza Gıda",
+        alt: "Neviza Gıda - Türkiye'nin Güvenilir Şeker Markası",
       },
     ],
   },
@@ -56,14 +74,20 @@ export const metadata: Metadata = {
     title: "Neviza Gıda - Mutluluğun En Tatlı Hali",
     description: "Türkiye'nin güvenilir şeker markası. Kaliteli ve lezzetli şeker üretiminde 25 yıllık deneyim.",
     images: ["/images/brand/neviza-og-image.jpg"],
+    creator: "@nevizagida",
   },
   alternates: {
+    canonical: "/",
     languages: {
       tr: "/tr",
       en: "/en",
       ar: "/ar",
       ru: "/ru",
     },
+  },
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+    yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
   },
 };
 
@@ -92,15 +116,14 @@ export default async function LocaleLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#00B4D8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        {/* Google Search Console Verification */}
-        <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="format-detection" content="telephone=no" />
+      </head>
+      <body className={`${inter.variable} ${baloo2.variable} font-body antialiased bg-gradient-soft min-h-screen flex flex-col`} suppressHydrationWarning>
         {/* JSON-LD Structured Data */}
-        <script
+        <Script
+          id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -131,8 +154,7 @@ export default async function LocaleLayout({
             })
           }}
         />
-      </head>
-      <body className={`${inter.variable} ${baloo2.variable} font-body antialiased bg-gradient-soft min-h-screen flex flex-col`}>
+        
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main className="flex-grow">

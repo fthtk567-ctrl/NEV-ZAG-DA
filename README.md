@@ -143,9 +143,22 @@ Create a `.env.local` file:
 
 ```env
 # Site Configuration
-NEXT_PUBLIC_SITE_URL=https://nevizagida.com
-NEXT_PUBLIC_CONTACT_EMAIL=info@nevizagida.com
-NEXT_PUBLIC_PHONE=+90212555123
+NEXT_PUBLIC_SITE_URL=https://www.nevizagida.com
+NEXT_PUBLIC_CONTACT_EMAIL=nevizagida@gmail.com
+NEXT_PUBLIC_PHONE=+905076514200
+
+# Google Analytics (Optional)
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+
+# Meta Pixel / Facebook (Optional)
+NEXT_PUBLIC_META_PIXEL_ID=YOUR_PIXEL_ID
+
+# Yandex Metrica (Optional - for Russian market)
+NEXT_PUBLIC_YANDEX_METRICA_ID=YOUR_COUNTER_ID
+
+# Search Engine Verification
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=YOUR_VERIFICATION_CODE
+NEXT_PUBLIC_YANDEX_VERIFICATION=YOUR_VERIFICATION_CODE
 
 # Email Configuration (Optional)
 SMTP_HOST=smtp.gmail.com
@@ -153,6 +166,69 @@ SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 ```
+
+## 🔍 SEO & Analytics
+
+### Google Search Console Setup
+
+This website is fully optimized for search engines with:
+
+- ✅ Meta tags and descriptions
+- ✅ Open Graph tags (social media)
+- ✅ Twitter Card support
+- ✅ Structured data (Schema.org)
+- ✅ XML Sitemap
+- ✅ Robots.txt
+- ✅ Multi-language support (hreflang)
+
+**📚 Detailed guides:**
+- [Google Setup Guide](./GOOGLE_SETUP.md) - Step-by-step Google Search Console setup
+- [SEO Setup Guide](./SEO_SETUP.md) - Complete SEO configuration details
+- [Logo Conversion Guide](./LOGO_CONVERSION_GUIDE.md) - How to create required images
+
+**Quick Start:**
+1. Create required logo files (see [Logo Guide](./LOGO_CONVERSION_GUIDE.md))
+2. Add Google Search Console verification code
+3. Submit sitemap: `https://www.nevizagida.com/sitemap.xml`
+4. (Optional) Add Google Analytics tracking
+
+### Analytics Integration
+
+The project supports multiple analytics platforms:
+
+**Google Analytics:**
+```typescript
+import { GoogleAnalytics } from '@/components/Analytics';
+
+// Add to layout.tsx
+<GoogleAnalytics />
+```
+
+**Meta Pixel (Facebook):**
+```typescript
+import { MetaPixel } from '@/components/Analytics';
+
+// Add to layout.tsx
+<MetaPixel />
+```
+
+**Yandex Metrica (for Russian market):**
+```typescript
+import { YandexMetrica } from '@/components/Analytics';
+
+// Add to layout.tsx
+<YandexMetrica />
+```
+
+### Testing SEO
+
+**Tools to verify your SEO setup:**
+- Google Search Console: https://search.google.com/search-console
+- PageSpeed Insights: https://pagespeed.web.dev/
+- Mobile-Friendly Test: https://search.google.com/test/mobile-friendly
+- Facebook Debugger: https://developers.facebook.com/tools/debug/
+- Twitter Card Validator: https://cards-dev.twitter.com/validator
+- Rich Results Test: https://search.google.com/test/rich-results
 
 ## � File Protection System
 
