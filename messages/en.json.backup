@@ -1,0 +1,245 @@
+{
+  "hero": {
+    "title": "The Sweetest Form of Happiness",
+    "description": "Since 2010, we have been delighting children and adults with our delicious jelly candies.",
+    "buttonText": "Discover Our Products"
+  },
+  "homeHero": {
+    "title": "The Sweetest Form of Happiness",
+    "description": "Since 2010, we have been delighting children and adults with our delicious jelly candies.",
+    "buttonText": "Discover Our Products"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "quality": "Quality",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "With over 15 years of experience, we produce quality jelly candies and spread happiness worldwide.",
+    "storyTitle": "Our Story",
+    "valuesTitle": "Our Values",
+    "timelineTitle": "Our Journey",
+    "certificatesTitle": "Quality Certificates",
+    "company": "Neviza Food Industry",
+    "story": {
+      "paragraph1": "As Neviza, we have been operating as one of Turkey's leading jelly candy manufacturers since 2010. By combining modern technology with traditional flavors, we produce high-quality and delicious products.",
+      "paragraph2": "Our hygiene and quality standards are in line with international norms, and we continuously conduct research and development activities in our production processes. This allows us to offer innovative products that appeal to both children and adults.",
+      "paragraph3": "We also have a presence in international markets by exporting to more than 4 countries worldwide. With our customer satisfaction-oriented approach, we have made the Neviza brand a representative of reliable and quality products."
+    },
+    "values": [
+      {
+        "title": "Quality",
+        "description": "We provide the highest quality assurance by manufacturing to ISO 22000 standards."
+      },
+      {
+        "title": "Innovation",
+        "description": "We develop new flavors and products for continuous improvement."
+      },
+      {
+        "title": "Customer Satisfaction",
+        "description": "We always prioritize customer satisfaction in all our processes."
+      },
+      {
+        "title": "Reliability",
+        "description": "With our decade of experience, we have become a trusted brand in the industry."
+      }
+    ]
+  },
+  "products": {
+    "hero": {
+      "title": "Our Products",
+      "description": "Discover our high-quality jelly candy varieties produced with over 30 years of experience."
+    },
+    "categoriesSection": {
+      "title": "Product Categories",
+      "description": "We appeal to consumers of all ages with our wide range of products."
+    },
+    "categories": {
+      "nevijel": {
+        "title": "Nevijel",
+        "description": "Pioneer of our premium quality soft jelly candies",
+        "features": {
+          "feature1": "Soft texture",
+          "feature2": "Fruit flavored",
+          "feature3": "Natural colors",
+          "feature4": "Long shelf life"
+        }
+      },
+      "jelibon": {
+        "title": "Jelly Beans",
+        "description": "Colorful and delicious candies loved by children",
+        "features": {
+          "feature1": "Chewing pleasure",
+          "feature2": "Colorful appearance",
+          "feature3": "Fruit flavors"
+        }
+      },
+      "halkali": {
+        "title": "Ring Candies",
+        "description": "Preferred by those who cannot give up classic flavors",
+        "features": {
+          "feature1": "Traditional taste",
+          "feature2": "Fun ring shape",
+          "feature3": "Various flavors"
+        }
+      }
+    },
+    "status": {
+      "available": "Available",
+      "development": "In Development",
+      "comingSoon": "Coming Soon"
+    },
+    "quality": {
+      "title": "Our Quality Assurance",
+      "description": "All our products are manufactured in hygienic conditions and in our facility approved by the Ministry of Health, with the highest quality standards. We produce safely with our ISO 22000 Food Safety Management System certification."
+    }
+  },
+  "home": {
+    "statsSection": {
+      "title": "Neviza in Numbers"
+    },
+    "stats": {
+      "customers": "Happy Customers",
+      "customersDesc": "We have over 250 happy customers worldwide",
+      "capacity": "Tons Production",
+      "capacityDesc": "We serve with a monthly production capacity of 50 tons",
+      "certificates": "Quality Certificate",
+      "certificatesDesc": "We have 5 quality certificates at international standards",
+      "experience": "Years Experience",
+      "experienceDesc": "In the industry since 2010"
+    },
+    "productSection": {
+      "title": "Our Product Categories"
+    },
+    "products": {
+      "nevijel": {
+        "name": "Nevijel",
+        "description": "Pioneer of our premium quality soft jelly candies. Our main product Nevijel has been a quality and delicious option since 2010.",
+        "features": {
+          "feature1": "Soft texture",
+          "feature2": "Fruit flavored",
+          "feature3": "Natural colors",
+          "feature4": "Long shelf life"
+        }
+      },
+      "gummyBears": {
+        "name": "Gummy Bears",
+        "description": "Colorful and delicious bear-shaped candies loved by children. This product in development will soon be on our shelves.",
+        "features": {
+          "feature1": "Chewy pleasure",
+          "feature2": "Colorful appearance",
+          "feature3": "Fruit flavors",
+          "feature4": "Fun shape"
+        }
+      },
+      "fruitRings": {
+        "name": "Fruit Rings",
+        "description": "Our ring-shaped candies with natural fruit flavors. This delicious category in our new product development process will be with you very soon.",
+        "features": {
+          "feature1": "Ring shape",
+          "feature2": "Natural flavors",
+          "feature3": "Colorful varieties",
+          "feature4": "Soft texture"
+        }
+      }
+    },
+    "productStatus": {
+      "available": "Available",
+      "development": "In Development",
+      "comingSoon": "Coming Soon"
+    },
+    "quality": {
+      "title": "Leaders in Quality and Safety",
+      "paragraph1": "Since 2010, we have been one of the leading companies in quality jelly candy production. We produce in our modern facility under the highest hygiene standards.",
+      "paragraph2": "All our products are manufactured in compliance with Turkish Food Codex and international standards and undergo regular quality controls.",
+      "paragraph3": "Our mission is to provide safe, quality, and delicious products for children and adults. Our vision is to be Turkey's leading brand in the jelly candy sector."
+    },
+    "buttons": {
+      "details": "See Details",
+      "comingSoon": "Coming Soon..."
+    }
+  },
+  "footer": {
+    "company": "Neviza Food Industry",
+    "address": "Çumra Organized Industrial Zone, Çumra/Konya - Turkey",
+    "email": "nevizagida@gmail.com",
+    "phone": "+90 507 651 42 00",
+    "rights": "All rights reserved.",
+    "description": "We have been producing quality jelly candies for over 15 years."
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "description": "Get in touch with us, let us answer your questions."
+    },
+    "infoSection": {
+      "title": "Contact Information"
+    },
+    "info": {
+      "phone": {
+        "title": "Phone",
+        "content": "+90 507 651 42 00"
+      },
+      "email": {
+        "title": "Email",
+        "content": "nevizagida@gmail.com"
+      },
+      "address": {
+        "title": "Address",
+        "content": "Çumra Organized Industrial Zone\\nÇumra/Konya"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "content": "Monday - Friday: 08:00 - 18:00\\nSaturday: 09:00 - 14:00"
+      }
+    },
+    "form": {
+      "title": "Send Message",
+      "description": "Fill out the form to learn how we can help you.",
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Your name and surname"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email address"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+90 5XX XXX XX XX"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Your company name"
+      },
+      "subject": {
+        "label": "Subject"
+      },
+      "subjectOptions": {
+        "general": "General Information",
+        "sales": "Sales and Pricing",
+        "partnership": "Business Partnership",
+        "support": "Technical Support"
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Write your message here..."
+      },
+      "submit": "Send Message"
+    },
+    "quickContact": {
+      "title": "Quick Contact",
+      "description": "For urgent matters, you can call directly or send an email.",
+      "call": "Call Now",
+      "email": "Send Email"
+    },
+    "map": {
+      "title": "Our Location",
+      "description": "We are in Çumra Organized Industrial Zone",
+      "comingSoon": "Map coming soon"
+    }
+  }
+}

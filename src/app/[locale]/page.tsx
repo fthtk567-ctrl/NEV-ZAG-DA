@@ -81,21 +81,6 @@ export default async function HomePage({ params }: Props) {
       status: 'development',
       link: `/${locale}/products/gummy-bears`,
     },
-    {
-      id: 'fruit-rings',
-      name: t('home.products.fruitRings.name'),
-      description: t('home.products.fruitRings.description'),
-      image: '/fruit-ring.svg',
-      features: [
-        t('home.products.fruitRings.features.feature1'),
-        t('home.products.fruitRings.features.feature2'),
-        t('home.products.fruitRings.features.feature3'),
-        t('home.products.fruitRings.features.feature4')
-      ],
-      gradient: 'from-orange-400 to-red-300',
-      status: 'coming-soon',
-      link: `/${locale}/products/fruit-rings`,
-    },
   ];
 
   // Çeviri metinlerini bir nesnede topluyoruz
