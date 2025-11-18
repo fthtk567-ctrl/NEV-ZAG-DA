@@ -1,245 +1,235 @@
-{
-  "hero": {
-    "title": "Mutluluğun En Tatlı Hali",
-    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
-    "buttonText": "Ürünlerimizi Keşfedin"
-  },
-  "homeHero": {
-    "title": "Mutluluğun En Tatlı Hali",
-    "description": "2010 yılından bu yana ürettiğimiz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
-    "buttonText": "Ürünlerimizi Keşfedin"
-  },
-  "navigation": {
-    "home": "Ana Sayfa",
-    "about": "Hakkımızda",
-    "products": "Ürünler",
-    "quality": "Kalite",
-    "contact": "İletişim"
-  },
-  "about": {
-    "title": "Hakkımızda",
-    "subtitle": "2010 yılından beri kaliteli jöle şekerler üretiyor ve tüm dünyaya mutluluk dağıtıyoruz.",
-    "storyTitle": "Hikayemiz",
-    "valuesTitle": "Değerlerimiz",
-    "timelineTitle": "Yolculuğumuz",
-    "certificatesTitle": "Kalite Sertifikalarımız",
-    "company": "Neviza Gıda Sanayi",
-    "story": {
-      "paragraph1": "Neviza olarak, 2010 yılından bu yana Türkiye'nin jöle şekerleme üretimindeki öncü firmalarından biri olarak faaliyet gösteriyoruz. Modern teknolojiyi geleneksel lezzetle birleştirerek, yüksek kaliteli ve lezzetli ürünler üretiyoruz.",
-      "paragraph2": "Hijyen ve kalite standartlarımız uluslararası normlarla uyumlu olup, üretim süreçlerimizde sürekli olarak araştırma-geliştirme faaliyetleri yürütmekteyiz. Bu sayede hem çocukların hem de yetişkinlerin beğenisine hitap eden yenilikçi ürünler sunabiliyoruz.",
-      "paragraph3": "Ayrıca dünya genelinde 4'ten fazla ülkeye ihracat yaparak uluslararası pazarlarda da varlık gösteriyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla Neviza markasını güvenilir ve kaliteli ürünlerin temsilcisi haline getirdik."
-    },
-    "values": [
-      {
-        "title": "Kalite",
-        "description": "ISO 22000 standartlarına uygun üretim yaparak en yüksek kalite güvencesini sağlıyoruz."
-      },
-      {
-        "title": "Yenilikçilik",
-        "description": "Sürekli gelişim için yeni tatlar ve ürünler geliştiriyoruz."
-      },
-      {
-        "title": "Müşteri Memnuniyeti",
-        "description": "Tüm süreçlerimizde müşteri memnuniyetini ön planda tutuyoruz."
-      },
-      {
-        "title": "Güvenilirlik",
-        "description": "On yıllık tecrübemizle sektörde güvenilir bir marka haline geldik."
-      }
-    ]
-  },
-  "products": {
-    "hero": {
-      "title": "Ürünlerimiz",
-      "description": "30 yılı aşkın tecrübemizle ürettiğimiz kaliteli jöle şeker çeşitlerimizi keşfedin."
-    },
-    "categoriesSection": {
-      "title": "Ürün Kategorilerimiz",
-      "description": "Geniş ürün yelpazemizle her yaştan tüketicinin beğenisine hitap ediyoruz."
-    },
-    "categories": {
-      "nevijel": {
-        "title": "Nevijel",
-        "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü",
-        "features": {
-          "feature1": "Yumuşak dokulu",
-          "feature2": "Meyve aromalı",
-          "feature3": "Doğal renkler",
-          "feature4": "Uzun raf ömrü"
-        }
-      },
-      "jelibon": {
-        "title": "Jelibon",
-        "description": "Çocukların en sevdiği renkli ve lezzetli şekerler",
-        "features": {
-          "feature1": "Çiğneme keyfi",
-          "feature2": "Renkli görünüm",
-          "feature3": "Meyve lezzetleri"
-        }
-      },
-      "halkali": {
-        "title": "Halkalı Şeker",
-        "description": "Klasik lezzetlerden vazgeçemeyenlerin tercihi",
-        "features": {
-          "feature1": "Geleneksel lezzet",
-          "feature2": "Eğlenceli halka şekli",
-          "feature3": "Çeşitli aromalar"
-        }
-      }
-    },
-    "status": {
-      "available": "Satışta",
-      "development": "Geliştirme Aşamasında",
-      "comingSoon": "Yakında"
-    },
-    "quality": {
-      "title": "Kalite Güvencemiz",
-      "description": "Tüm ürünlerimiz en yüksek kalite standartlarında, hijyenik koşullarda ve Sağlık Bakanlığı onaylı tesisimizde üretilmektedir. ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikamızla güvenli üretim yapıyoruz."
-    }
-  },
-  "home": {
-    "statsSection": {
-      "title": "Rakamlarla Neviza"
-    },
-    "stats": {
-      "customers": "Mutlu Müşteri",
-      "customersDesc": "Dünya genelinde 250'den fazla mutlu müşterimiz var",
-      "capacity": "Ton Üretim",
-      "capacityDesc": "Aylık 50 ton üretim kapasitesiyle hizmet veriyoruz",
-      "certificates": "Kalite Belgesi",
-      "certificatesDesc": "Uluslararası standartlarda 5 kalite belgesine sahibiz",
-      "experience": "Yıllık Deneyim",
-      "experienceDesc": "2010'dan beri sektördeyiz"
-    },
-    "productSection": {
-      "title": "Ürün Kategorilerimiz"
-    },
-    "products": {
-      "nevijel": {
-        "name": "Nevijel",
-        "description": "Premium kalitede yumuşak jöle şekerlerimizin öncüsü. Ana ürünümüz olan Nevijel, 2010'dan beri ürettiğimiz kaliteli ve lezzetli bir seçenek.",
-        "features": {
-          "feature1": "Yumuşak dokulu",
-          "feature2": "Meyve aromalı",
-          "feature3": "Doğal renkler",
-          "feature4": "Uzun raf ömrü"
-        }
-      },
-      "gummyBears": {
-        "name": "Jelibon Ayıcık",
-        "description": "Çocukların en sevdiği renkli ve lezzetli ayıcık şekerleri. Geliştirme aşamasında olan bu ürün çok yakında raflarımızda yerini alacak.",
-        "features": {
-          "feature1": "Çiğneme keyfi",
-          "feature2": "Renkli görünüm",
-          "feature3": "Meyve lezzetleri",
-          "feature4": "Eğlenceli şekil"
-        }
-      },
-      "fruitRings": {
-        "name": "Meyve Halkaları",
-        "description": "Doğal meyve aromalı halka şeklindeki şekerlerimiz. Yeni ürün geliştirme sürecimizde olan bu lezzetli kategorimiz çok yakında sizlerle.",
-        "features": {
-          "feature1": "Halka şekli",
-          "feature2": "Doğal aromalar",
-          "feature3": "Renkli çeşitler",
-          "feature4": "Yumuşak doku"
-        }
-      }
-    },
-    "productStatus": {
-      "available": "Mevcut",
-      "development": "Geliştirme Aşamasında",
-      "comingSoon": "Yakında"
-    },
-    "quality": {
-      "title": "Kalite ve Güvende Öncüyüz",
-      "paragraph1": "2010 yılından bu yana, kaliteli jöle şeker üretiminde sektörün öncü firmalarından biriyiz. Modern tesisimizde, en yüksek hijyen standartlarında üretim yapıyoruz.",
-      "paragraph2": "Tüm ürünlerimiz, Türk Gıda Kodeksi ve uluslararası standartlara uygun olarak üretilmekte ve düzenli kalite kontrollerinden geçmektedir.",
-      "paragraph3": "Misyonumuz, çocuklar ve yetişkinler için güvenli, kaliteli ve lezzetli ürünler sunmaktır. Vizyonumuz ise Türkiye'nin jöle şeker sektöründe lider markası olmaktır."
-    },
-    "buttons": {
-      "details": "Detayları Gör",
-      "comingSoon": "Yakında..."
-    }
-  },
-  "footer": {
-    "company": "Neviza Gıda Sanayi",
-    "address": "Çumra Organize Sanayi Bölgesi, Çumra/Konya - Türkiye",
-    "email": "nevizagida@gmail.com",
-    "phone": "+90 507 651 42 00",
-    "rights": "Tüm hakları saklıdır.",
-    "description": "15 yılı aşkın deneyimle kaliteli jöle şekerleri üretiyoruz."
-  },
-  "contact": {
-    "hero": {
-      "title": "İletişim",
-      "description": "Bizimle iletişime geçin, sorularınızı yanıtlayalım."
-    },
-    "infoSection": {
-      "title": "İletişim Bilgileri"
-    },
-    "info": {
-      "phone": {
-        "title": "Telefon",
-        "content": "+90 507 651 42 00"
-      },
-      "email": {
-        "title": "E-posta",
-        "content": "nevizagida@gmail.com"
-      },
-      "address": {
-        "title": "Adres",
-        "content": "Çumra Organize Sanayi Bölgesi\\nÇumra/Konya"
-      },
-      "hours": {
-        "title": "Çalışma Saatleri",
-        "content": "Pazartesi - Cuma: 08:00 - 18:00\\nCumartesi: 09:00 - 14:00"
-      }
-    },
-    "form": {
-      "title": "Mesaj Gönder",
-      "description": "Size nasıl yardımcı olabileceğimizi öğrenmek için formu doldurun.",
-      "name": {
-        "label": "Ad Soyad",
-        "placeholder": "Adınız ve soyadınız"
-      },
-      "email": {
-        "label": "E-posta",
-        "placeholder": "E-posta adresiniz"
-      },
-      "phone": {
-        "label": "Telefon",
-        "placeholder": "+90 5XX XXX XX XX"
-      },
-      "company": {
-        "label": "Şirket",
-        "placeholder": "Şirket adınız"
-      },
-      "subject": {
-        "label": "Konu"
-      },
-      "subjectOptions": {
-        "general": "Genel Bilgi",
-        "sales": "Satış ve Fiyat",
-        "partnership": "İş Ortaklığı",
-        "support": "Teknik Destek"
-      },
-      "message": {
-        "label": "Mesajınız",
-        "placeholder": "Mesajınızı buraya yazın..."
-      },
-      "submit": "Mesaj Gönder"
-    },
-    "quickContact": {
-      "title": "Hızlı İletişim",
-      "description": "Acil durumlar için doğrudan telefon ile arayabilir veya e-posta gönderebilirsiniz.",
-      "call": "Hemen Ara",
-      "email": "E-posta Gönder"
-    },
-    "map": {
-      "title": "Konumumuz",
-      "description": "Çumra Organize Sanayi Bölgesi'ndeyiz",
-      "comingSoon": "Harita yakında eklenecek"
-    }
-  }
+﻿{
+    "hero":  {
+                 "title":  "Mutluluğun En Tatlı Hali",
+                 "description":  "15 yıllık tecrübemizle sunduğumuz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+                 "buttonText":  "Ürünlerimizi Keşfedin"
+             },
+    "homeHero":  {
+                     "title":  "Mutluluğun En Tatlı Hali",
+                     "description":  "15 yıllık tecrübemizle sunduğumuz lezzetli jöle şekerlerimizle çocuklara ve yetişkinlere keyif sunuyoruz.",
+                     "buttonText":  "Ürünlerimizi Keşfedin"
+                 },
+    "navigation":  {
+                       "home":  "Ana Sayfa",
+                       "about":  "Hakkımızda",
+                       "products":  "Ürünler",
+                       "quality":  "Kalite",
+                       "contact":  "İletişim"
+                   },
+    "about":  {
+                  "title":  "Hakkımızda",
+                  "subtitle":  "15 yıllık tecrübemizle kaliteli jöle şekerler üretiyor ve tüm dünyaya mutluluk dağıtıyoruz.",
+                  "storyTitle":  "Hikayemiz",
+                  "valuesTitle":  "Değerlerimiz",
+                  "timelineTitle":  "Yolculuğumuz",
+                  "certificatesTitle":  "Kalite Sertifikalarımız",
+                  "company":  "Neviza Gıda Sanayi",
+                  "story":  {
+                                "paragraph1":  "Neviza olarak, 15 yıllık tecrübemizle Türkiye\u0027nin jöle şekerleme üretimindeki öncü firmalarından biri olarak faaliyet gösteriyoruz. Modern teknolojiyi geleneksel lezzetle birleştirerek, yüksek kaliteli ve lezzetli ürünler üretiyoruz.",
+                                "paragraph2":  "Hijyen ve kalite standartlarımız uluslararası normlarla uyumlu olup, üretim süreçlerimizde sürekli olarak araştırma-geliştirme faaliyetleri yürütmekteyiz. Bu sayede hem çocukların hem de yetişkinlerin beğenisine hitap eden yenilikçi ürünler sunabiliyoruz.",
+                                "paragraph3":  "Ayrıca dünya genelinde 4\u0027ten fazla ülkeye ihracat yaparak uluslararası pazarlarda da varlık gösteriyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla Neviza markasını güvenilir ve kaliteli ürünlerin temsilcisi haline getirdik."
+                            },
+                  "values":  [
+                                 {
+                                     "title":  "Kalite",
+                                     "description":  "ISO 22000 standartlarına uygun üretim yaparak en yüksek kalite güvencesini sağlıyoruz."
+                                 },
+                                 {
+                                     "title":  "Yenilikçilik",
+                                     "description":  "Sürekli gelişim için yeni tatlar ve ürünler geliştiriyoruz."
+                                 },
+                                 {
+                                     "title":  "Müşteri Memnuniyeti",
+                                     "description":  "Tüm süreçlerimizde müşteri memnuniyetini ön planda tutuyoruz."
+                                 },
+                                 {
+                                     "title":  "Güvenilirlik",
+                                     "description":  "On yıllık tecrübemizle sektörde güvenilir bir marka haline geldik."
+                                 }
+                             ]
+              },
+    "products":  {
+                     "hero":  {
+                                  "title":  "Ürünlerimiz",
+                                  "description":  "30 yılı aşkın tecrübemizle ürettiğimiz kaliteli jöle şeker çeşitlerimizi keşfedin."
+                              },
+                     "categoriesSection":  {
+                                               "title":  "Ürün Kategorilerimiz",
+                                               "description":  "Geniş ürün yelpazemizle her yaştan tüketicinin beğenisine hitap ediyoruz."
+                                           },
+                     "categories":  {
+                                        "nevijel":  {
+                                                        "title":  "Nevijel",
+                                                        "description":  "Premium kalitede yumuşak jöle şekerlerimizin öncüsü",
+                                                        "features":  {
+                                                                         "feature1":  "Yumuşak dokulu",
+                                                                         "feature2":  "Meyve aromalı",
+                                                                         "feature3":  "Doğal renkler",
+                                                                         "feature4":  "Uzun raf ömrü"
+                                                                     }
+                                                    },
+                                        "jelibon":  {
+                                                        "title":  "Jelibon",
+                                                        "description":  "Çocukların en sevdiği renkli ve lezzetli şekerler",
+                                                        "features":  {
+                                                                         "feature1":  "Çiğneme keyfi",
+                                                                         "feature2":  "Renkli görünüm",
+                                                                         "feature3":  "Meyve lezzetleri"
+                                                                     }
+                                                    },
+                                        "halkali":  {
+                                                        "title":  "Halkalı Şeker",
+                                                        "description":  "Klasik lezzetlerden vazgeçemeyenlerin tercihi",
+                                                        "features":  {
+                                                                         "feature1":  "Geleneksel lezzet",
+                                                                         "feature2":  "Eğlenceli halka şekli",
+                                                                         "feature3":  "Çeşitli aromalar"
+                                                                     }
+                                                    }
+                                    },
+                     "status":  {
+                                    "available":  "Satışta",
+                                    "development":  "Geliştirme Aşamasında",
+                                    "comingSoon":  "Yakında"
+                                },
+                     "quality":  {
+                                     "title":  "Kalite Güvencemiz",
+                                     "description":  "Tüm ürünlerimiz en yüksek kalite standartlarında, hijyenik koşullarda ve Sağlık Bakanlığı onaylı tesisimizde üretilmektedir. ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikamızla güvenli üretim yapıyoruz."
+                                 }
+                 },
+    "home":  {
+                 "statsSection":  {
+                                      "title":  "Rakamlarla Neviza"
+                                  },
+                 "stats":  {
+                               "customers":  "Mutlu Müşteri",
+                               "customersDesc":  "Dünya genelinde 250\u0027den fazla mutlu müşterimiz var",
+                               "capacity":  "Ton Üretim",
+                               "capacityDesc":  "Aylık 50 ton üretim kapasitesiyle hizmet veriyoruz",
+                               "certificates":  "Kalite Belgesi",
+                               "certificatesDesc":  "Uluslararası standartlarda 5 kalite belgesine sahibiz",
+                               "experience":  "Yıllık Deneyim",
+                               "experienceDesc":  "15 yıllık sektör tecrübesi"
+                           },
+                 "productSection":  {
+                                        "title":  "Ürün Kategorilerimiz"
+                                    },
+                 "products":  {
+                                  "nevijel":  {
+                                                  "name":  "Nevijel",
+                                                  "description":  "Premium kalitede yumuşak jöle şekerlerimizin öncüsü. Ana ürünümüz olan Nevijel, 15 yıllık tecrübemizle ürettiğimiz kaliteli ve lezzetli bir seçenek.",
+                                                  "features":  {
+                                                                   "feature1":  "Yumuşak dokulu",
+                                                                   "feature2":  "Meyve aromalı",
+                                                                   "feature3":  "Doğal renkler",
+                                                                   "feature4":  "Uzun raf ömrü"
+                                                               }
+                                              },
+                                  "gummyBears":  {
+                                                     "name":  "Jelibon Ayıcık",
+                                                     "description":  "Çocukların en sevdiği renkli ve lezzetli ayıcık şekerleri. Geliştirme aşamasında olan bu ürün çok yakında raflarımızda yerini alacak.",
+                                                     "features":  {
+                                                                      "feature1":  "Çiğneme keyfi",
+                                                                      "feature2":  "Renkli görünüm",
+                                                                      "feature3":  "Meyve lezzetleri",
+                                                                      "feature4":  "Eğlenceli şekil"
+                                                                  }
+                                                 }
+                              },
+                 "productStatus":  {
+                                       "available":  "Mevcut",
+                                       "development":  "Geliştirme Aşamasında",
+                                       "comingSoon":  "Yakında"
+                                   },
+                 "quality":  {
+                                 "title":  "Kalite ve Güvende Öncüyüz",
+                                 "paragraph1":  "15 yıllık tecrübemizle, kaliteli jöle şeker üretiminde sektörün öncü firmalarından biriyiz. Modern tesisimizde, en yüksek hijyen standartlarında üretim yapıyoruz.",
+                                 "paragraph2":  "Tüm ürünlerimiz, Türk Gıda Kodeksi ve uluslararası standartlara uygun olarak üretilmekte ve düzenli kalite kontrollerinden geçmektedir.",
+                                 "paragraph3":  "Misyonumuz, çocuklar ve yetişkinler için güvenli, kaliteli ve lezzetli ürünler sunmaktır. Vizyonumuz ise Türkiye\u0027nin jöle şeker sektöründe lider markası olmaktır."
+                             },
+                 "buttons":  {
+                                 "details":  "Detayları Gör",
+                                 "comingSoon":  "Yakında..."
+                             }
+             },
+    "footer":  {
+                   "company":  "Neviza Gıda Sanayi",
+                   "address":  "Çumra Organize Sanayi Bölgesi, Çumra/Konya - Türkiye",
+                   "email":  "nevizagida@gmail.com",
+                   "phone":  "+90 507 651 42 00",
+                   "rights":  "Tüm hakları saklıdır.",
+                   "description":  "15 yılı aşkın deneyimle kaliteli jöle şekerleri üretiyoruz."
+               },
+    "contact":  {
+                    "hero":  {
+                                 "title":  "İletişim",
+                                 "description":  "Bizimle iletişime geçin, sorularınızı yanıtlayalım."
+                             },
+                    "infoSection":  {
+                                        "title":  "İletişim Bilgileri"
+                                    },
+                    "info":  {
+                                 "phone":  {
+                                               "title":  "Telefon",
+                                               "content":  "+90 507 651 42 00"
+                                           },
+                                 "email":  {
+                                               "title":  "E-posta",
+                                               "content":  "nevizagida@gmail.com"
+                                           },
+                                 "address":  {
+                                                 "title":  "Adres",
+                                                 "content":  "Çumra Organize Sanayi Bölgesi\\nÇumra/Konya"
+                                             },
+                                 "hours":  {
+                                               "title":  "Çalışma Saatleri",
+                                               "content":  "Pazartesi - Cuma: 08:00 - 18:00\\nCumartesi: 09:00 - 14:00"
+                                           }
+                             },
+                    "form":  {
+                                 "title":  "Mesaj Gönder",
+                                 "description":  "Size nasıl yardımcı olabileceğimizi öğrenmek için formu doldurun.",
+                                 "name":  {
+                                              "label":  "Ad Soyad",
+                                              "placeholder":  "Adınız ve soyadınız"
+                                          },
+                                 "email":  {
+                                               "label":  "E-posta",
+                                               "placeholder":  "E-posta adresiniz"
+                                           },
+                                 "phone":  {
+                                               "label":  "Telefon",
+                                               "placeholder":  "+90 5XX XXX XX XX"
+                                           },
+                                 "company":  {
+                                                 "label":  "Şirket",
+                                                 "placeholder":  "Şirket adınız"
+                                             },
+                                 "subject":  {
+                                                 "label":  "Konu"
+                                             },
+                                 "subjectOptions":  {
+                                                        "general":  "Genel Bilgi",
+                                                        "sales":  "Satış ve Fiyat",
+                                                        "partnership":  "İş Ortaklığı",
+                                                        "support":  "Teknik Destek"
+                                                    },
+                                 "message":  {
+                                                 "label":  "Mesajınız",
+                                                 "placeholder":  "Mesajınızı buraya yazın..."
+                                             },
+                                 "submit":  "Mesaj Gönder"
+                             },
+                    "quickContact":  {
+                                         "title":  "Hızlı İletişim",
+                                         "description":  "Acil durumlar için doğrudan telefon ile arayabilir veya e-posta gönderebilirsiniz.",
+                                         "call":  "Hemen Ara",
+                                         "email":  "E-posta Gönder"
+                                     },
+                    "map":  {
+                                "title":  "Konumumuz",
+                                "description":  "Çumra Organize Sanayi Bölgesi\u0027ndeyiz",
+                                "comingSoon":  "Harita yakında eklenecek"
+                            }
+                }
 }
