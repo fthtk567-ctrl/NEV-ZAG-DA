@@ -112,7 +112,13 @@ export default async function HomePage({ params }: Props) {
       {/* Company Stats Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">{translations.statsTitle}</h2>
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary-600">
+            {t('home.seo.mainTitle')}
+          </h1>
+          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            {t('home.seo.subtitle')}
+          </p>
+          <h2 className="text-2xl font-bold text-center mb-12">{translations.statsTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {companyStats.map((stat) => (
               <Card key={stat.id} className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">

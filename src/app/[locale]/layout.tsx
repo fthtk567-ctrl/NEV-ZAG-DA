@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import StructuredData from '@/components/StructuredData';
 import "../globals.css";
 
 const inter = Inter({
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   description: "Neviza Gıda olarak güvenli ve kaliteli ürün sunumu ile Türkiye'nin güvenilir şeker markasıyız. Nevijel ve diğer yumuşak şeker çeşitleriyle çocuklara ve dünyaya neşe katıyoruz.",
-  keywords: ["neviza", "gıda", "şeker", "jelibon", "nevijel", "ayıcık şeker", "türk markası", "kaliteli şeker", "jöle şeker", "yumuşak şeker", "çocuk şekeri", "neviza gıda"],
+  keywords: ["neviza gıda", "neviza", "gıda", "şeker üreticisi", "jelibon", "nevijel", "ayıcık şeker", "jöle şeker", "yumuşak şeker", "türk markası", "kaliteli şeker", "çocuk şekeri", "neviza gıda konya", "şeker fabrikası", "türkiye şeker", "candy manufacturer turkey"],
   authors: [{ name: "Neviza Gıda" }],
   creator: "Neviza Gıda",
   publisher: "Neviza Gıda",
@@ -121,39 +122,8 @@ export default async function LocaleLayout({
         <meta name="format-detection" content="telephone=no" />
       </head>
       <body className={`${inter.variable} ${baloo2.variable} font-body antialiased bg-gradient-soft min-h-screen flex flex-col`} suppressHydrationWarning>
-        {/* JSON-LD Structured Data */}
-        <Script
-          id="schema-org"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Neviza Gıda Sanayi",
-              "alternateName": "Neviza",
-              "url": "https://www.nevizagida.com",
-              "logo": "https://www.nevizagida.com/neviza-logo-final.svg",
-              "description": "Türkiye'nin güvenilir jöle şeker üreticisi. 2010'dan beri kaliteli ve lezzetli ürünler sunuyoruz.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Çumra Organize Sanayi Bölgesi",
-                "addressLocality": "Çumra",
-                "addressRegion": "Konya",
-                "addressCountry": "TR"
-              },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+90-507-651-42-00",
-                "contactType": "customer service",
-                "email": "nevizagida@gmail.com"
-              },
-              "sameAs": [
-                "https://www.instagram.com/nevizagida/",
-                "https://www.facebook.com/nevizagida/"
-              ]
-            })
-          }}
-        />
+        {/* Structured Data for SEO */}
+        <StructuredData locale={locale} />
         
         <NextIntlClientProvider messages={messages}>
           <Header />
