@@ -14,7 +14,9 @@
                        "about":  "Hakkımızda",
                        "products":  "Ürünler",
                        "quality":  "Kalite",
-                       "contact":  "İletişim"
+                       "contact":  "İletişim",
+                       "language":  "Dil seçin",
+                       "menu":  "Menü"
                    },
     "about":  {
                   "title":  "Hakkımızda",
@@ -51,7 +53,7 @@
     "products":  {
                      "hero":  {
                                   "title":  "Ürünlerimiz",
-                                  "description":  "30 yılı aşkın tecrübemizle ürettiğimiz kaliteli jöle şeker çeşitlerimizi keşfedin."
+                                  "description":  "Ürettiğimiz jöle şeker çeşitlerini keşfedin."
                               },
                      "categoriesSection":  {
                                                "title":  "Ürün Kategorilerimiz",
@@ -192,7 +194,7 @@
                              },
                     "form":  {
                                  "title":  "Mesaj Gönder",
-                                 "description":  "Size nasıl yardımcı olabileceğimizi öğrenmek için formu doldurun.",
+                                 "description":  "Formu doldurun ve taslağı e-posta uygulamanızdan gönderin.",
                                  "name":  {
                                               "label":  "Ad Soyad",
                                               "placeholder":  "Adınız ve soyadınız"
@@ -222,7 +224,8 @@
                                                  "label":  "Mesajınız",
                                                  "placeholder":  "Mesajınızı buraya yazın..."
                                              },
-                                 "submit":  "Mesaj Gönder"
+                                 "submit":  "E-posta taslağı oluştur",
+                                 "draftLink":  "E-posta uygulamasında aç"
                              },
                     "quickContact":  {
                                          "title":  "Hızlı İletişim",

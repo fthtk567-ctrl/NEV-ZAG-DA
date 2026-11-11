@@ -3,19 +3,25 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Globe } from 'lucide-react';
+import { legalPages, localizedPages, logoPath } from '@/lib/site';
 
 const locales = [
-  { code: "tr", name: "Türkçe", flag: "" },
-  { code: "en", name: "English", flag: "" },
-  { code: "ar", name: "العربية", flag: "" },
-  { code: "ru", name: "Русский", flag: "" }
-];
+  { code: "tr", name: "Türkçe" },
+  { code: "en", name: "English" },
+  { code: "ar", name: "العربية" },
+  { code: "ru", name: "Русский" }
+] as const;
 
 export default function Header() {
   const currentLocale = useLocale();
+  const pathname = usePathname();
+  const currentPage = [...localizedPages, ...legalPages].find(
+    (page) => pathname === `/${currentLocale}${page}`,
+  ) ?? '';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
@@ -36,7 +42,7 @@ export default function Header() {
           <Link href={`/${currentLocale}`} className="flex items-center">
             <div className="relative w-24 h-12 flex items-center justify-center">
               <Image 
-                src="/neviza-logo-final.svg" 
+                src={logoPath}
                 alt="Neviza Logo" 
                 width={96}
                 height={48}
@@ -52,6 +58,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
+                aria-current={pathname === item.href ? 'page' : undefined}
                 className="text-gray-700 hover:text-primary-500 font-medium transition-colors relative group"
               >
                 {item.name}
@@ -67,7 +74,10 @@ export default function Header() {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+                aria-label={t('language')}
+                aria-expanded={isLanguageOpen}
+                aria-controls={isLanguageOpen ? 'language-options' : undefined}
+                onClick={() => setIsLanguageOpen((open) => !open)}
                 className="flex items-center space-x-2"
               >
                 <Globe className="w-4 h-4" />
@@ -77,18 +87,20 @@ export default function Header() {
               </Button>
               
               {isLanguageOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                <div id="language-options" className="absolute end-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
                   {locales.map((locale) => (
                     <Link
                       key={locale.code}
-                      href={`/${locale.code}`}
-                      className={"flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors " +
+                      href={`/${locale.code}${currentPage}`}
+                      lang={locale.code}
+                      hrefLang={locale.code}
+                      aria-current={currentLocale === locale.code ? 'true' : undefined}
+                      className={"block px-4 py-2 hover:bg-gray-50 transition-colors " +
                         (currentLocale === locale.code ? "bg-primary-50 text-primary-600" : "text-gray-700")
                       }
                       onClick={() => setIsLanguageOpen(false)}
                     >
-                      <span>{locale.flag}</span>
-                      <span>{locale.name}</span>
+                      {locale.name}
                     </Link>
                   ))}
                 </div>
@@ -99,7 +111,10 @@ export default function Header() {
             <Button
               variant="ghost"
               className="lg:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={t('menu')}
+              aria-expanded={isMenuOpen}
+              aria-controls={isMenuOpen ? 'mobile-navigation' : undefined}
+              onClick={() => setIsMenuOpen((open) => !open)}
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -112,12 +127,13 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="lg:hidden py-6">
+          <nav id="mobile-navigation" className="lg:hidden py-6">
             <div className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
+                  aria-current={pathname === item.href ? 'page' : undefined}
                   className="text-gray-700 hover:text-primary-500 font-medium transition-colors px-2 py-1"
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -14,7 +14,9 @@
                        "about":  "About Us",
                        "products":  "Products",
                        "quality":  "Quality",
-                       "contact":  "Contact"
+                       "contact":  "Contact",
+                       "language":  "Select language",
+                       "menu":  "Menu"
                    },
     "about":  {
                   "title":  "About Us",
@@ -51,7 +53,7 @@
     "products":  {
                      "hero":  {
                                   "title":  "Our Products",
-                                  "description":  "Discover our high-quality jelly candy varieties produced with over 30 years of experience."
+                                  "description":  "Discover our range of jelly candies."
                               },
                      "categoriesSection":  {
                                                "title":  "Product Categories",
@@ -98,6 +100,10 @@
                                  }
                  },
     "home":  {
+                 "seo": {
+                     "mainTitle": "Neviza Gıda – Candy Manufacturer in Türkiye",
+                     "subtitle": "We make jelly candies, gummies and soft sweets with 15 years of experience and export worldwide from Konya."
+                 },
                  "statsSection":  {
                                       "title":  "Neviza in Numbers"
                                   },
@@ -188,7 +194,7 @@
                              },
                     "form":  {
                                  "title":  "Send Message",
-                                 "description":  "Fill out the form to learn how we can help you.",
+                                 "description":  "Fill out the form and send the draft from your email app.",
                                  "name":  {
                                               "label":  "Full Name",
                                               "placeholder":  "Your name and surname"
@@ -218,7 +224,8 @@
                                                  "label":  "Your Message",
                                                  "placeholder":  "Write your message here..."
                                              },
-                                 "submit":  "Send Message"
+                                 "submit":  "Create email draft",
+                                 "draftLink":  "Open in your email app"
                              },
                     "quickContact":  {
                                          "title":  "Quick Contact",

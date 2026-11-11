@@ -1,13 +1,19 @@
-﻿import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
+﻿import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin, Clock, MessageSquare, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { contactEmail, localizedMetadata } from '@/lib/site';
 import ContactForm from './ContactForm';
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
 }
+
+export async function generateMetadata({ params }: ContactPageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'contact.hero' });
+  return localizedMetadata(locale, '/contact', t('title'), t('description'));
+}
+
 export default async function ContactPage({ params }: ContactPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -112,6 +118,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                     placeholder: t('form.message.placeholder')
                   },
                   submit: t('form.submit'),
+                  draftLink: t('form.draftLink'),
                   subjectOptions: {
                     general: t('form.subjectOptions.general'),
                     sales: t('form.subjectOptions.sales'),
@@ -166,7 +173,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 {t('quickContact.call')}
               </a>
               <a
-                href="mailto:nevizagida@gmail.com"
+                href={`mailto:${contactEmail}`}
                 className="inline-flex items-center gap-2 bg-white text-primary-600 border-2 border-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors font-medium"
               >
                 <Mail className="w-5 h-5" />

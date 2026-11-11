@@ -1,11 +1,17 @@
-﻿import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
-import { Star, Heart, Award, Sparkles } from 'lucide-react';
+﻿import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Sparkles } from 'lucide-react';
 import Image from 'next/image';
+import { localizedMetadata, productImagePath } from '@/lib/site';
 
 import { PageProps } from '@/types/page';
 
 type ProductsPageProps = PageProps;
+
+export async function generateMetadata({ params }: ProductsPageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'products.hero' });
+  return localizedMetadata(locale, '/products', t('title'), t('description'));
+}
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
   const { locale } = await params;
@@ -65,10 +71,10 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
       <section className="bg-gradient-candy py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-6xl font-headline font-bold text-gray-900 mb-6">
-            {t('hero.title')}
+            {t('products.hero.title')}
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {t('hero.description')}
+            {t('products.hero.description')}
           </p>
         </div>
       </section>
@@ -86,7 +92,7 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productCategories.map((category, index) => {
+            {productCategories.map((category) => {
               const IconComponent = category.icon;
               return (
                 <div key={category.id} className="rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
@@ -95,8 +101,8 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
                     {category.id === 'nevijel' ? (
                       <div className="relative">
                         <Image 
-                          src="/nevijel-product.svg" 
-                          alt="Nevijel Ürünü" 
+                          src={productImagePath}
+                          alt={category.title}
                           width={120} 
                           height={120}
                           className="drop-shadow-lg"

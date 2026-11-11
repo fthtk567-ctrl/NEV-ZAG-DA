@@ -1,14 +1,19 @@
-import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Hero from '@/components/Hero';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Star, Heart, Award, Sparkles } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { localizedMetadata, productImagePath } from '@/lib/site';
 
 import { PageProps } from '@/types/page';
 
 type Props = PageProps;
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'homeHero' });
+  return localizedMetadata(locale, '', t('title'), t('description'));
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
@@ -55,7 +60,7 @@ export default async function HomePage({ params }: Props) {
       id: 'nevijel',
       name: t('home.products.nevijel.name'),
       description: t('home.products.nevijel.description'),
-      image: '/nevijel-product.svg',
+      image: productImagePath,
       features: [
         t('home.products.nevijel.features.feature1'),
         t('home.products.nevijel.features.feature2'),
@@ -64,7 +69,6 @@ export default async function HomePage({ params }: Props) {
       ],
       gradient: 'from-pink-400 to-purple-300',
       status: 'available',
-      link: `/${locale}/products/nevijel`,
     },
     {
       id: 'gummy-bears',
@@ -79,7 +83,6 @@ export default async function HomePage({ params }: Props) {
       ],
       gradient: 'from-yellow-400 to-amber-300',
       status: 'development',
-      link: `/${locale}/products/gummy-bears`,
     },
   ];
 
@@ -91,10 +94,6 @@ export default async function HomePage({ params }: Props) {
       available: t('home.productStatus.available'),
       development: t('home.productStatus.development'),
       comingSoon: t('home.productStatus.comingSoon'),
-    },
-    buttons: {
-      details: t('home.buttons.details'),
-      comingSoon: t('home.buttons.comingSoon'),
     },
     quality: {
       title: t('home.quality.title'),
@@ -112,9 +111,9 @@ export default async function HomePage({ params }: Props) {
       {/* Company Stats Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary-600">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary-600">
             {t('home.seo.mainTitle')}
-          </h1>
+          </h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
             {t('home.seo.subtitle')}
           </p>
@@ -165,11 +164,11 @@ export default async function HomePage({ params }: Props) {
                   <div className="flex-1 mb-6">
                     <p className="text-gray-600 mb-4">{category.description}</p>
                     <div className="flex justify-center my-6">
-                      <img 
+                      <Image
                         src={category.image} 
                         alt={category.name}
-                        width="120" 
-                        height="120"
+                        width={120}
+                        height={120}
                         className="drop-shadow-lg" 
                       />
                     </div>

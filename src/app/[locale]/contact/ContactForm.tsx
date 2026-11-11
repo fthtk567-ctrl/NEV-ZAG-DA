@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { type FormEvent, useId, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageSquare, Send } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { contactEmail } from '@/lib/site';
 
 interface ContactFormProps {
   translations: {
@@ -17,6 +18,7 @@ interface ContactFormProps {
       subject: { label: string };
       message: { label: string; placeholder: string };
       submit: string;
+      draftLink: string;
       subjectOptions: {
         general: string;
         sales: string;
@@ -29,27 +31,24 @@ interface ContactFormProps {
 
 export default function ContactForm({ translations }: ContactFormProps) {
   const { form } = translations;
-  
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    subject: form.subjectOptions.general,
-    message: ''
-  });
+  const id = useId();
+  const [draftUrl, setDraftUrl] = useState<string>();
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+  function prepareDraft(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const value = (name: string) => String(data.get(name) ?? '').trim();
+    const details = [
+      [form.name.label, value('name')],
+      [form.email.label, value('email')],
+      [form.phone.label, value('phone')],
+      [form.company.label, value('company')],
+    ].filter(([, entry]) => entry).map(([label, entry]) => `${label}: ${entry}`);
+    const body = [...details, '', value('message')].join('\r\n');
+    const subject = value('subject') || form.subjectOptions.general;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Burada form verilerini işleyebilirsiniz, örneğin bir API'ye gönderebilirsiniz
-    alert('Form gönderildi! Bu sadece bir demo.');
-  };
+    setDraftUrl(`mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
+  }
 
   return (
     <Card className="shadow-xl">
@@ -63,31 +62,36 @@ export default function ContactForm({ translations }: ContactFormProps) {
         </p>
       </CardHeader>
       <CardContent>
-        <form className="space-y-6" onSubmit={handleSubmit}>
+        <form
+          className="space-y-6"
+          method="post"
+          onSubmit={prepareDraft}
+          onChange={draftUrl ? () => setDraftUrl(undefined) : undefined}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor={`${id}-name`} className="block text-sm font-medium text-gray-700 mb-2">
                 {form.name.label}
               </label>
               <input
                 type="text"
+                id={`${id}-name`}
                 name="name"
-                value={formData.name}
-                onChange={handleInputChange}
+                autoComplete="name"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 placeholder={form.name.placeholder}
                 required
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor={`${id}-email`} className="block text-sm font-medium text-gray-700 mb-2">
                 {form.email.label}
               </label>
               <input
                 type="email"
+                id={`${id}-email`}
                 name="email"
-                value={formData.email}
-                onChange={handleInputChange}
+                autoComplete="email"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 placeholder={form.email.placeholder}
                 required
@@ -97,27 +101,27 @@ export default function ContactForm({ translations }: ContactFormProps) {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor={`${id}-phone`} className="block text-sm font-medium text-gray-700 mb-2">
                 {form.phone.label}
               </label>
               <input
                 type="tel"
+                id={`${id}-phone`}
                 name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
+                autoComplete="tel"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 placeholder={form.phone.placeholder}
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor={`${id}-company`} className="block text-sm font-medium text-gray-700 mb-2">
                 {form.company.label}
               </label>
               <input
                 type="text"
+                id={`${id}-company`}
                 name="company"
-                value={formData.company}
-                onChange={handleInputChange}
+                autoComplete="organization"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 placeholder={form.company.placeholder}
               />
@@ -125,13 +129,12 @@ export default function ContactForm({ translations }: ContactFormProps) {
           </div>
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor={`${id}-subject`} className="block text-sm font-medium text-gray-700 mb-2">
               {form.subject.label}
             </label>
-            <select 
+            <select
+              id={`${id}-subject`}
               name="subject"
-              value={formData.subject}
-              onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
             >
               <option>{form.subjectOptions.general}</option>
@@ -142,13 +145,12 @@ export default function ContactForm({ translations }: ContactFormProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor={`${id}-message`} className="block text-sm font-medium text-gray-700 mb-2">
               {form.message.label}
             </label>
             <textarea
+              id={`${id}-message`}
               name="message"
-              value={formData.message}
-              onChange={handleInputChange}
               rows={5}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-vertical"
               placeholder={form.message.placeholder}
@@ -157,9 +159,16 @@ export default function ContactForm({ translations }: ContactFormProps) {
           </div>
 
           <Button type="submit" className="w-full bg-[#00BFB3] hover:bg-[#00a79c] text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2">
-            <Send className="w-5 h-5" />
+            <Send className="w-5 h-5" aria-hidden="true" />
             {form.submit}
           </Button>
+          {draftUrl && (
+            <p role="status" className="text-center text-sm">
+              <a href={draftUrl} className="font-medium text-teal-700 underline">
+                {form.draftLink}
+              </a>
+            </p>
+          )}
         </form>
       </CardContent>
     </Card>

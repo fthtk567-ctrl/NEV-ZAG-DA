@@ -1,11 +1,15 @@
-import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Shield, Award, Users, Clock, Target, Heart, Star, CheckCircle } from 'lucide-react';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { localizedMetadata } from '@/lib/site';
 
 import { PageProps } from '@/types/page';
 
 type AboutPageProps = PageProps;
+
+export async function generateMetadata({ params }: AboutPageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about' });
+  return localizedMetadata(locale, '/about', t('title'), t('subtitle'));
+}
 
 export default async function AboutPage({ params }: AboutPageProps) {
   const { locale } = await params;
@@ -13,29 +17,6 @@ export default async function AboutPage({ params }: AboutPageProps) {
   
   // Çevirileri getTranslations ile alıyoruz
   const t = await getTranslations();
-
-  const companyValues = [
-    {
-      icon: Shield,
-      title: t('about.values.0.title'),
-      description: t('about.values.0.description')
-    },
-    {
-      icon: Heart,
-      title: t('about.values.2.title'),
-      description: t('about.values.2.description')
-    },
-    {
-      icon: Target,
-      title: t('about.values.1.title'),
-      description: t('about.values.1.description')
-    },
-    {
-      icon: Users,
-      title: t('about.values.3.title'),
-      description: t('about.values.3.description')
-    }
-  ];
 
   return (
     <div className="min-h-screen pt-20">

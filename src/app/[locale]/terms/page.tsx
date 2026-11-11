@@ -1,4 +1,5 @@
 // Çeviri sistemi geçici olarak devre dışı - direkt Türkçe metin kullanıyoruz
+import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { FileText, Scale, AlertTriangle, CheckCircle, Globe, Mail } from 'lucide-react';
@@ -6,6 +7,11 @@ import { FileText, Scale, AlertTriangle, CheckCircle, Globe, Mail } from 'lucide
 interface TermsPageProps {
   params: Promise<{ locale: string }>;
 }
+
+export const metadata: Metadata = {
+  title: 'Kullanım Şartları',
+  alternates: { canonical: '/tr/terms' },
+};
 
 export default async function TermsPage({ params }: TermsPageProps) {
   const { locale } = await params;
@@ -80,7 +86,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div lang="tr" dir="ltr" className="min-h-screen pt-20">
       {/* Header */}
       <section className="bg-gradient-candy py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

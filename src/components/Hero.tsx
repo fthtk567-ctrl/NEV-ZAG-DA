@@ -1,11 +1,10 @@
-﻿import { getTranslations } from 'next-intl/server';
+﻿import { getLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
+import { productImagePath } from '@/lib/site';
 
 export default async function Hero() {
-  const t = await getTranslations();
-  
-  // Component artık çevirileri next-intl üzerinden alıyor
+  const [t, locale] = await Promise.all([getTranslations(), getLocale()]);
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-primary-50/50">
@@ -13,7 +12,7 @@ export default async function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* Sol Taraf - Metin İçeriği */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-start">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
               {t('homeHero.title')}
             </h1>
@@ -21,7 +20,7 @@ export default async function Hero() {
               {t('homeHero.description')}
             </p>
             <Link
-              href="/products"
+              href={`/${locale}/products`}
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#00BFB3] hover:bg-[#00a79c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00BFB3] transition-colors duration-200"
             >
               {t('homeHero.buttonText')}
@@ -32,10 +31,11 @@ export default async function Hero() {
           <div className="relative mx-auto lg:mx-0 w-full max-w-lg">
             <div className="relative w-full aspect-square">
               <Image
-                src="/nevijel-product.svg"
-                alt="Nevijel Ürün Görseli"
+                src={productImagePath}
+                alt={t('home.products.nevijel.name')}
                 fill
                 priority
+                sizes="(max-width: 544px) calc(100vw - 32px), 512px"
                 className="object-contain"
               />
             </div>

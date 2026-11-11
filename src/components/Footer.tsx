@@ -1,8 +1,7 @@
-﻿'use client';
-
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
+import { logoPath } from '@/lib/site';
 
 export default function Footer() {
   const currentLocale = useLocale();
@@ -55,7 +54,7 @@ export default function Footer() {
           {/* Logo */}
           <Link href={`/${currentLocale}`} className="flex items-center mb-6">
             <Image
-              src="/neviza-logo-final.svg"
+              src={logoPath}
               alt="Neviza Logo"
               width={120}
               height={60}

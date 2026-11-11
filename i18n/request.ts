@@ -1,30 +1,12 @@
 import { getRequestConfig } from 'next-intl/server';
+import { defaultLocale, isLocale } from '../src/lib/site';
 
-const locales = ['tr', 'en', 'ar', 'ru'];
-const defaultLocale = 'tr';
+export default getRequestConfig(async ({ requestLocale }) => {
+  const requestedLocale = await requestLocale;
+  const locale = isLocale(requestedLocale) ? requestedLocale : defaultLocale;
 
-export default getRequestConfig(async ({ locale }) => {
-  // Validate locale and avoid attempting to import unexpected paths
-  let loc = locale;
-  if (!loc || !locales.includes(loc) || typeof loc !== 'string' || loc.includes('.')) {
-    loc = defaultLocale;
-  }
-
-  try {
-    const messages = (await import(`../messages/${loc}.json`)).default;
-    return { 
-      locale: loc,
-      messages 
-    };
-  } catch (err) {
-    // Fallback to default locale if import fails
-    // Log for debugging in server output
-    // eslint-disable-next-line no-console
-    console.error('Could not load messages for locale', loc, err);
-    const fallback = (await import(`../messages/${defaultLocale}.json`)).default;
-    return { 
-      locale: defaultLocale,
-      messages: fallback 
-    };
-  }
+  return {
+    locale,
+    messages: (await import(`../messages/${locale}.json`)).default,
+  };
 });
